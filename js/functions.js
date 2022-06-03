@@ -1,5 +1,5 @@
 // JavaScript I - JavaScript with HTML - Functions - Exercise
-(function (){
+(function () {
     "use strict";
 /**
  * TODO:
@@ -9,7 +9,7 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
-function sayHello(name){
+function sayHello(name) {
     return "Hello " + name;
 }
 sayHello("test name")
@@ -67,10 +67,9 @@ function isTwo(num){
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-function calculateTip(tipPercentage, billTotal){
+function calculateTip(tipPercentage, billTotal) {
     return "The tip on the bill is $" + (tipPercentage*billTotal)
 }
-    console.log(calculateTip(.25, 25.50));
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
@@ -81,7 +80,6 @@ let userBill = prompt("What was your bill total?");
 let userTip = prompt("What percentage would you like to tip?");
     console.log("$" + userBill + " , " + userTip + "%");
     console.log(calculateTip(userBill, userTip));
-
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
@@ -98,8 +96,8 @@ let userTip = prompt("What percentage would you like to tip?");
  */
 let userPrice = 20;
 let userDiscount = .25;
-function applyDiscount(price, discount){
-    return price - (price * discount);
+function applyDiscount(price, discount) {
+    return "The total after applying the discount is: $" + (price - price * discount);
 }
-    console.log("The total after applying the discount is: $" + applyDiscount(userPrice, userDiscount));
+    console.log(applyDiscount(userPrice, userDiscount));
 })()
