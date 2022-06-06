@@ -135,6 +135,9 @@
     console.log("Entering number? " + enterNum);
     if (enterNum === true) {
         userNum = parseFloat(prompt("Enter a number!"));
+        // Works for the most part. If a number is entered FIRST and then letters follow the number is taken.
+        // If letters are entered first the code stops. How to prevent from evaluating when letters are entered AFTER a number?
+        // parseFloat is part of that problem but seems to be the only working method currently.
         console.log(userNum);
         if (isNaN(userNum) === false) {
             if (userNum % 2 === 0) {
@@ -158,7 +161,8 @@
 // Using number function on prompt gives NaN and without breaks the whole thing.
 // I think the primary problem is how I'm checking for NaN. because the code is still running
 // even when using a string "test" passed in and read as NaN. Something is allowing the code to
-// keep running even though it is not a number (presumably improperly checking if it's a number)
+// keep running even though it is not a number (presumably improperly checking if it's a number).
+// Tried about a million different ways to get this to work over 4ish hours. Brian's solution was clutch.
 
 /*if (typeof userNum === "number")
     {
