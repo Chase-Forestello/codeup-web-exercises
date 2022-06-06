@@ -1,4 +1,4 @@
-// incomplete (stuck) - JavaScript I - JavaScript with HTML - Conditionals - Exercise
+// Complete - JavaScript I - JavaScript with HTML - Conditionals - Exercise
 (function () {
     "use strict";
 
@@ -23,7 +23,7 @@
         }
         return result;
     }
-//test run with "blue"
+// test run with "blue"
     console.log(analyzeColor("blue"));
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -67,7 +67,7 @@
     }
 // Log for checking color function with switch statements
     console.log(analyzeColor(randomColor));
-//Prompt for user to see color selection and function behavior
+// Prompt for user to see color selection and function behavior
     let userColor = prompt("What is your favorite color: red, orange, yellow, green, blue, indigo, or violet?");
     alert(analyzeColor(userColor));
     console.log(analyzeColor(userColor));
@@ -83,7 +83,7 @@
     var luckyNumber = Math.floor(Math.random() * 6);
 // log to see lucky number generated
     console.log("Lucky number:" + luckyNumber);
-//prompting user for total
+// prompting user for total
     let userBill = prompt("What was your bill total?");
 // switch initiates
     calculateTotal(luckyNumber, userBill)
