@@ -164,23 +164,3 @@
 // keep running even though it is not a number (presumably improperly checking if it's a number).
 // Tried about a million different ways to get this to work over 4ish hours. Brian's solution was clutch.
 
-/*if (typeof userNum === "number")
-    {
-        //If the test condition 1 is TRUE then these it will check for test condition 2
-        if (userNum % 2 === 0)
-        {
-            //If the test condition 2 is TRUE then these statements will be executed
-            alert(userNum + " is even!");
-        }
-    else
-        {
-            //If the c test condition 2 is FALSE then these statements will be executed
-            alert(userNum + " is odd!");
-        }
-    else
-        {
-            //If the test condition 1 is FALSE then these statements will be executed
-            alert("You must enter a number!");
-        }
-
-*/
