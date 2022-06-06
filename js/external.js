@@ -1,11 +1,11 @@
-// JavaScript I - JavaScript with HTML - inline/external JS - Exercise - Part 1
+// Complete - JavaScript I - JavaScript with HTML - inline/external JS - Exercise - Part 1
 (function () {
     "use strict";
     console.log("Hello from external Javascript.")
     alert("Welcome to my Website!");
     let favColor = prompt("What is your favorite color?");
     alert("Great! " + favColor + " is my favorite color too!");
-// JavaScript I - JavaScript with HTML - Completing Exercise 3 from previous lesson - Exercise - Part 2
+// Complete - JavaScript I - JavaScript with HTML - Completing Exercise 3 from previous lesson - Exercise - Part 2
 //Movie exercise
     let movie1 = prompt("How long did you rent The Little Mermaid?");
     console.log(movie1);
