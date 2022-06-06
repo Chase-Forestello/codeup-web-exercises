@@ -35,7 +35,7 @@ function addOne(userInput) {
 }
 //boolean value "false" is not testing correctly.
 function isEven(userInput) {
-     return parseFloat(userInput) % 2 === 0;
+    return parseFloat(userInput) % 2 === 0;
 }
 function isIdentical(userInput, userinput) {
     return userInput === userinput;
