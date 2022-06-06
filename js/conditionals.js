@@ -23,6 +23,7 @@
         }
         return result;
     }
+
 // test run with "blue"
     console.log(analyzeColor("blue"));
 // Don't change the next two lines!
@@ -34,6 +35,7 @@
     var randomColor = colors[Math.floor(Math.random() * colors.length)];
 // Log for checking color function
     console.log(analyzeColor(randomColor));
+
 // Switch based duplicate of above code
     function analyzeColor(colorName) {
         let result;
@@ -65,6 +67,7 @@
         }
         return result;
     }
+
 // Log for checking color function with switch statements
     console.log(analyzeColor(randomColor));
 // Prompt for user to see color selection and function behavior
@@ -77,6 +80,7 @@
     function calculateTotal(luckyNum, userTotal) {
         return userTotal;
     }
+
 // log to test function
     console.log(calculateTotal(4, 100));
 // Generate a random number between 0 and 6, prompt user for total, display relevant data
@@ -132,24 +136,19 @@
     if (enterNum === true) {
         userNum = parseFloat(prompt("Enter a number!"));
         console.log(userNum);
-        if (isNaN(userNum) === false)
-            { if (userNum % 2 === 0)
-            {
+        if (isNaN(userNum) === false) {
+            if (userNum % 2 === 0) {
                 alert(userNum + " is even!");
-            }
-            else
-            {
+            } else {
                 alert(userNum + " is odd!");
             }
-                if (Math.sign(userNum) === 1) {
-                    alert("The number is positive!");
-                }
-                else {
-                    alert("The number is negative!");
-                }
-                return alert(userNum + " + 100 is " + (~~userNum + 100));
+            if (Math.sign(userNum) === 1) {
+                alert("The number is positive!");
+            } else {
+                alert("The number is negative!");
             }
-        else {
+            return alert(userNum + " + 100 is " + (~~userNum + 100));
+        } else {
             alert("You must enter a number!");
         }
     }
