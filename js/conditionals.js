@@ -1,4 +1,4 @@
-// JavaScript I - JavaScript with HTML - Conditionals - Exercise
+// incomplete (stuck) - JavaScript I - JavaScript with HTML - Conditionals - Exercise
 (function () {
     "use strict";
 
@@ -23,7 +23,6 @@
         }
         return result;
     }
-
 //test run with "blue"
     console.log(analyzeColor("blue"));
 // Don't change the next two lines!
@@ -35,7 +34,6 @@
     var randomColor = colors[Math.floor(Math.random() * colors.length)];
 // Log for checking color function
     console.log(analyzeColor(randomColor));
-
 // Switch based duplicate of above code
     function analyzeColor(colorName) {
         let result;
@@ -67,7 +65,6 @@
         }
         return result;
     }
-
 // Log for checking color function with switch statements
     console.log(analyzeColor(randomColor));
 //Prompt for user to see color selection and function behavior
@@ -80,7 +77,6 @@
     function calculateTotal(luckyNum, userTotal) {
         return userTotal;
     }
-
 // log to test function
     console.log(calculateTotal(4, 100));
 // Generate a random number between 0 and 6, prompt user for total, display relevant data
@@ -134,9 +130,9 @@
     let enterNum = confirm("Would you like to enter a number? Click \"OK\"");
     console.log("Entering number? " + enterNum);
     if (enterNum === true) {
-        userNum = Number(prompt("Enter a number!"));
+        userNum = parseFloat(prompt("Enter a number!"));
         console.log(userNum);
-        if (typeof userNum == "number")
+        if (isNaN(userNum) === false)
             { if (userNum % 2 === 0)
             {
                 alert(userNum + " is even!");
