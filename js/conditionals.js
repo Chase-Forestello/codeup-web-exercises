@@ -88,7 +88,7 @@
 // log to see lucky number generated
     console.log("Lucky number:" + luckyNumber);
 // prompting user for total
-    let userBill = prompt("What was your bill total?");
+    let userBill = parseFloat(prompt("What was your bill total?"));
 // switch initiates
     calculateTotal(luckyNumber, userBill)
     let userNewBill = "Your bill of $" + userBill + " was reduced to $";
@@ -106,12 +106,13 @@
             alert(userNewBill + (userBill - userBill * .50) + " with a lucky number 4 discount of 50% off!");
             break;
         case 5:
-            alert(userNewBill + (userBill - userBill * 1) + " with a lucky number 5 discount of 100% off!");
+            alert(userNewBill + (userBill - userBill) + " with a lucky number 5 discount of 100% off!");
             break;
         default:
-            alert(userNewBill = "Your bill of $" + userBill + " will not be reduced due to a lucky number 0 discount of 0% off!");
+            alert("Your bill of $" + userBill + " will not be reduced due to a lucky number 0 discount of 0% off!");
             break;
     }
+
     /**
      * TODO:
      * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -130,7 +131,73 @@
      * Can you refactor your code to use functions?
      * HINT: The way we prompt for a value could be improved
      */
-    let userNum;
+    function numberGame() {
+        let userEnterNum = confirm("Would you like to enter a number?");
+        if (userEnterNum) {
+            //happy path (number given)
+            let userInput = prompt("Please enter a number!");
+            if (isNaN(Number(userInput))) {
+                alert("Incorrect data type! You must enter a number!")
+            } else {
+                alert(userInput + " plus 100 is " + (Number(userInput) + 100));
+                if (userInput % 2 === 0) {
+                    alert(userInput + " is even!");
+                } else {
+                    alert(userInput + " is odd!");
+                }
+                    if (userInput > -1 ) {
+                        alert(userInput + " is positive!");
+                    } else {
+                        alert(userInput + " is negative!");
+                    }
+            }
+        } else {
+            //unhappy path (no number given)
+            alert("Thanks anyways!");
+        }
+    }
+
+    numberGame();
+})();
+
+// Not really sure what the issue is. Try reorganizing the last alert.
+// Using number function on prompt gives NaN and without breaks the whole thing.
+// I think the primary problem is how I'm checking for NaN. because the code is still running
+// even when using a string "test" passed in and read as NaN. Something is allowing the code to
+// keep running even though it is not a number (presumably improperly checking if it's a number).
+// Tried about a million different ways to get this to work over 4ish hours. Brian's solution was clutch.
+
+/*
+function numberGame() {
+    let userEnterNum = confirm("Would you like to enter a number?");
+    if (userEnterNum) {
+        //happy path (number given)
+        let userInput = prompt("Please enter a number!");
+        if (isNaN(Number(userInput))) {
+            alert("Incorrect data type! You must enter a number!")
+        } else {
+            alert(userInput + " plus 100 is " + (~~userInput + 100));
+
+            if (userInput % 2 === 0) {
+                alert(userInput + " is even!");
+            } else {
+                alert(userInput + " is odd!");
+
+                if (Math.sign(~~userInput) === 1) {
+                    alert(userInput + " is positive!");
+                } else {
+                    alert(userInput + " is negative!");
+                }
+            }
+        }
+    } else {
+        //unhappy path (no number given)
+        alert("Thanks anyways!");
+    }
+}
+numberGame();
+
+   let userNum;
     let enterNum = confirm("Would you like to enter a number? Click \"OK\"");
     console.log("Entering number? " + enterNum);
     if (enterNum === true) {
@@ -155,12 +222,4 @@
             alert("You must enter a number!");
         }
     }
-})();
-
-// Not really sure what the issue is. Try reorganizing the last alert.
-// Using number function on prompt gives NaN and without breaks the whole thing.
-// I think the primary problem is how I'm checking for NaN. because the code is still running
-// even when using a string "test" passed in and read as NaN. Something is allowing the code to
-// keep running even though it is not a number (presumably improperly checking if it's a number).
-// Tried about a million different ways to get this to work over 4ish hours. Brian's solution was clutch.
-
+*/
