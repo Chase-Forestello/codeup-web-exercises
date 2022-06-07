@@ -1,4 +1,4 @@
-// Complete - JavaScript I - JavaScript with HTML - Conditionals - Exercise
+// Complete - JavaScript I - Conditionals - Exercise
 (function () {
     "use strict";
 
