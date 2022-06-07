@@ -1,4 +1,4 @@
-// Complete - JavaScript I - JavaScript with HTML - Functions - Exercise
+// Complete - JavaScript I - Functions - Exercise
 (function () {
     "use strict";
 
