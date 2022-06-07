@@ -1,3 +1,4 @@
+// Incomplete - JavaScript I - Loops - Exercise
 (function () {
     "use strict";
     function showMultiplicationTable (Num) {
@@ -25,13 +26,15 @@
         }
     }
     //Can't get triangle to display same number for each row.
+    let result = ""
     for (let i = 1; i <= 9; i++)
     {
-        for (let j = 0; j < i; j++)
-        {
-            console.log(i+"");
+        for (let j = 0; j < i; j++) {
+            result += i;
         }
+        result += "\n";
     }
+    console.log(result);
     for (let i = 100; i >= 5; i -= 5) {
         console.log(i);
     }
