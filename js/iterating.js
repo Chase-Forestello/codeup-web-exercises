@@ -27,15 +27,17 @@
      * Write some code that uses a for loop to log every item in the names
      * array.
      */
-    for (let i = 0; i < 4; i++) {
-        console.log("Here is a name using a for loop: " + names[i]);
+    for (let i = 0; i < names.length; i++) {
+        console.log("Here is index " + i + " from the names array using a for loop: " + names[i]);
     }
     /**
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
-    names.forEach(function (name) {
-        console.log("Here is a name: " + name);
+    let i = -1
+    names.forEach(function (element, index, array) {
+        ++i
+        console.log("Here is index " + i + " from the names array using a for each loop: " + element);
     });
     /**
      * TODO:
