@@ -1,6 +1,7 @@
 // Complete - JavaScript I - Loops - Exercise
 (function () {
     "use strict";
+
     let num = 1
     while (num < 65000) {
         num = num * 2
@@ -19,4 +20,5 @@
         }
     } while (allCones !== 0)
     console.log("All cones sold!");
+
 })();
