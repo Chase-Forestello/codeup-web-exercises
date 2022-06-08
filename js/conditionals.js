@@ -74,13 +74,13 @@
     let userColor = prompt("What is your favorite color: red, orange, yellow, green, blue, indigo, or violet?");
     alert(analyzeColor(userColor));
     console.log(analyzeColor(userColor));
+
     /* ########################################################################## */
 // function that returns a message stating old price, new price, and the applied discount
 // based on a random lucky number.
     function calculateTotal(luckyNum, userTotal) {
         return userTotal;
     }
-
 // log to test function
     console.log(calculateTotal(4, 100));
 // Generate a random number between 0 and 6, prompt user for total, display relevant data
@@ -131,6 +131,7 @@
      * Can you refactor your code to use functions?
      * HINT: The way we prompt for a value could be improved
      */
+
     function numberGame() {
         let userEnterNum = confirm("Would you like to enter a number?");
         if (userEnterNum) {
