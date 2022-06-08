@@ -39,6 +39,7 @@
         ++i
         console.log("Here is index " + i + " from the names array using a for each loop: " + element);
     });
+
     /**
      * TODO:
      * Create the following three functions, each will accept an array and
@@ -52,18 +53,22 @@
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
-    function firstElement (first) {
+    function firstElement(first) {
         return console.log("The first element of this array is: " + first[0]);
     }
+
     firstElement(names);
 
-    function secondElement (second) {
+    function secondElement(second) {
         return console.log("The second element of this array is: " + second[1]);
     }
+
     secondElement(names);
 
-    function fithElement (fith) {
-        return console.log("The fith element of this array is: " + fith[4]);
+    //undefined in this example because the array length is only 4.
+    function fifthElement(fifth) {
+        return console.log("The fifth element of this array is: " + fifth[4]);
     }
-    fithElement(names);
+
+    fifthElement(names);
 })();
