@@ -28,6 +28,7 @@
         result += "\n";
     }
     console.log(result);
+
 //using .repeat prints a new line for each row.
     for (let i = 1; i <= 9; i++) {
         let iAsString = i.toString();
@@ -36,4 +37,5 @@
     for (let i = 100; i >= 5; i -= 5/*same as i = i-5 */) {
         console.log(i);
     }
+
 })();
