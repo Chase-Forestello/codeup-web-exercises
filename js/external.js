@@ -1,4 +1,4 @@
-// Complete - JavaScript I - JavaScript with HTML - inline/external JS - Exercise - Part 1
+// Complete - JavaScript I - JavaScript with HTML - inline/external JS - Exercise - Part 1 & Part 2
 (function () {
     "use strict";
 
