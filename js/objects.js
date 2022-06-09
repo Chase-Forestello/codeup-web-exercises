@@ -1,4 +1,4 @@
-// Incomplete - JavaScript I - Objects - Exercise
+// Complete - JavaScript I - Objects - Exercise
 (function () {
     "use strict";
 
@@ -141,24 +141,21 @@
      */
 
 // sorta working but not efficient or automated
-    function CreateBook(x, y1, y2) {
 
-        let title = x;
-        let firstName = y1;
-        let lastName = y2;
+    function CreateBook(bookTitle, authorName) {
         return {
-            title: x, author: {
-                firstName: y1, lastName: y2
+            title: bookTitle, author: {
+                firstName: authorName.split(" ")[0], lastName: authorName.split(" ")[1]
             }
         }
     }
 
     let CreatedBooksArray = [];
-    CreatedBooksArray.push(CreateBook("Escape From Furance", "Alexander", "Smith"));
-    CreatedBooksArray.push(CreateBook("Percy Jackson", "Rick", "Riordan"));
-    CreatedBooksArray.push(CreateBook("The Lost City of Z", "David", "Grann"));
-    CreatedBooksArray.push(CreateBook("A Long Way Gone", "Ishmael", "Beah"));
-    CreatedBooksArray.push(CreateBook("The Underneath", "Kathi", "Appelt"));
+    CreatedBooksArray.push(CreateBook("Escape From Furance", "Alexander Smith"));
+    CreatedBooksArray.push(CreateBook("Percy Jackson", "Rick Riordan"));
+    CreatedBooksArray.push(CreateBook("The Lost City of Z", "David Grann"));
+    CreatedBooksArray.push(CreateBook("A Long Way Gone", "Ishmael Beah"));
+    CreatedBooksArray.push(CreateBook("The Underneath", "Kathi Appelt"));
     console.log(CreatedBooksArray);
 
     /*
