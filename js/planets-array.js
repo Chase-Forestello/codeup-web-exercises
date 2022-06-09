@@ -2,16 +2,7 @@
 (function () {
     "use strict";
 
-    var planets = [
-        'Mercury',
-        'Venus',
-        'Earth',
-        'Mars',
-        'Jupiter',
-        'Saturn',
-        'Uranus',
-        'Neptune'
-    ];
+    var planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
 
     /**
      * TODO:
