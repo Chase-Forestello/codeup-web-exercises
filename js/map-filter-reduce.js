@@ -41,18 +41,31 @@
     ];
 
     //Works but is logging empty arrays
-    for (let i = 0; i < users.length; i++) {
+    /*for (let i = 0; i < users.length; i++) {
         let x = users[i].languages;
         let filteredLanguages = x.filter((value, index, array) => array.length >= 3);
         console.log(filteredLanguages);
     }
+    */
+/*
     {
         let i = 0;
         let MappedEmails = users.map(n => users[i++].email)
         console.log(MappedEmails);
     }
 
-    let exp = users[1].yearsOfExperience
-    let experience = users.reduce((previousValue, currentValue) => previousValue + currentValue);
+    let experience = users.reduce((previousValue, currentValue) => {
+        console.log(users[1].yearsOfExperience);
+        let i = 0
+        return previousValue.yearsOfExperience + currentValue.yearsOfExperience;
+    }, 0);
     console.log(experience);
+*/
+    // returning NaN. Trying to perform math operation on something that is not
+    // a number, but what? When calling the properties by index it works in individual
+    // logs...
+
+    let test = users.reduce((accumulation, currentValue) => accumulation.yearsOfExperience + currentValue.yearsOfExperience);
+    console.log(test);
+
 })();
