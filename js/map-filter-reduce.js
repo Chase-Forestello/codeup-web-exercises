@@ -1,4 +1,4 @@
-// Incomplete - JavaScript I - Map, Filter and Reduce - Exercise
+// Incomplete - JavaScript II - Map, Filter and Reduce - Exercise
 (function () {
     "use strict";
 
@@ -39,8 +39,20 @@
             yearsOfExperience: 9
         }
     ];
-    let languages = users.filter(function(n) {
-       return users.languages > 2
-    });
-    console.log(languages);
+
+    //Works but is logging empty arrays
+    for (let i = 0; i < users.length; i++) {
+        let x = users[i].languages;
+        let filteredLanguages = x.filter((value, index, array) => array.length >= 3);
+        console.log(filteredLanguages);
+    }
+    {
+    let i = 0;
+    let MappedEmails = users.map(n => users[i++].email)
+    console.log(MappedEmails);
+}
+
+    let exp = users[1].yearsOfExperience
+    let experience = users.reduce((previousValue, currentValue) => previousValue + currentValue);
+    console.log(experience);
 })();
