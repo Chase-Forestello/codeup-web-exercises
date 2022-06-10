@@ -47,10 +47,10 @@
         console.log(filteredLanguages);
     }
     {
-    let i = 0;
-    let MappedEmails = users.map(n => users[i++].email)
-    console.log(MappedEmails);
-}
+        let i = 0;
+        let MappedEmails = users.map(n => users[i++].email)
+        console.log(MappedEmails);
+    }
 
     let exp = users[1].yearsOfExperience
     let experience = users.reduce((previousValue, currentValue) => previousValue + currentValue);
