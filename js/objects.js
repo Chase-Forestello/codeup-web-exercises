@@ -31,7 +31,7 @@
 
     person.sayHello = function () {
         console.log("Hello from " + person.firstName + " " + person.lastName);
-    }
+    };
     person.sayHello();
 
     /** TODO:
@@ -50,10 +50,11 @@
 
     var shoppers = [{name: 'Cameron', amount: 180}, {name: 'Ryan', amount: 250}, {name: 'George', amount: 320}];
     shoppers.forEach(function (x) {
+        // if shopper spends more than $200
         if (x.amount > 200) {
             let discount = x.amount * .12;
             let newAmount = x.amount - discount;
-            console.log(x.name + " spent: $" + x.amount + " and is eligible for a 12% discount of: $" + discount + " for a new total of: $" + newAmount);
+            console.log(x.name + " spent: $" + x.amount + " and is eligible for a 12% discount of: $" + discount + ", for a new total of: $" + newAmount);
         } else {
             console.log(x.name + " did not spend more than $200 and is not eligible for a discount.");
         }
@@ -95,7 +96,7 @@
     }]
     console.log(books);
     books.forEach(function (x) {
-        console.log(x.title + " was written by: " + x.author.firstName + " " + x.author.lastName);
+        console.log(`${x.title} was written by ${x.author.firstName} ${x.author.lastName}`);
     })
 
     /**
@@ -124,10 +125,12 @@
      */
 
     books.forEach(function (x, y) {
-        console.log("Book # " + (y + 1));
-        console.log("Title: " + x.title);
-        console.log("Author: " + (x.author.firstName + " " + x.author.lastName));
-    })
+        let output = `Book # ${y + 1}
+Title: ${x.title}
+Author: ${x.author.firstName} ${x.author.lastName}`
+        console.log(output);
+    });
+
 
     /**
      * Bonus:
@@ -158,8 +161,23 @@
     CreatedBooksArray.push(CreateBook("The Underneath", "Kathi Appelt"));
     console.log(CreatedBooksArray);
 
+
     /*
-        console.log("Constructed book object: " + CreateBook("City of Ember", "Jeanne DuPrau"));
+        Show book info function!!
     */
 
 })();
+
+
+let testString = "person"
+let good = "good"
+
+console.log("Hello " + testString + ", how are you? " + good + "!");
+
+console.log(`Hello ${testString}, how are you? ${good}!`);
+
+
+function sayHello(name) {
+    if (typeof name == "string")
+        return `Hello, ${name}!`;
+}
