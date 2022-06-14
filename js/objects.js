@@ -1,4 +1,4 @@
-// Complete - JavaScript I - Objects - Exercise
+// Incomplete - JavaScript I - Objects - Exercise
 (function () {
     "use strict";
 
@@ -167,17 +167,3 @@ Author: ${x.author.firstName} ${x.author.lastName}`
     */
 
 })();
-
-
-let testString = "person"
-let good = "good"
-
-console.log("Hello " + testString + ", how are you? " + good + "!");
-
-console.log(`Hello ${testString}, how are you? ${good}!`);
-
-
-function sayHello(name) {
-    if (typeof name == "string")
-        return `Hello, ${name}!`;
-}
