@@ -1,4 +1,4 @@
-// Incomplete - JavaScript II - Map, Filter and Reduce - Exercise
+// Complete - JavaScript II - Map, Filter and Reduce - Exercise
 (function () {
     "use strict";
 
@@ -41,37 +41,53 @@
     ];
 
 // filtering user languages
-// Works but is logging empty arrays
 
-    for (let i = 0; i < users.length; i++) {
-        let filteredLanguages = users[i].languages.filter((value, index, array) => array.length >= 3);
-        console.log(filteredLanguages);
-    }
+    let filteredLanguages = users.filter(function (user) {
+        return user.languages.length >= 3
+    });
+    console.log(filteredLanguages);
 
 // mapping user emails
 
-    {
-        let i = 0;
-        let mappedEmails = users.map(n => users[i++].email)
-        console.log(mappedEmails);
-    }
+    let mappedEmails = users.map(function (user) {
+        return user.email
+    });
+    console.log(mappedEmails);
 
-    // let experience = users.reduce((previousValue, currentValue) => {
-    //     console.log(users[1].yearsOfExperience);
-    //     let i = 0
-    //     return previousValue.yearsOfExperience + currentValue.yearsOfExperience;
-    // }, 0);
-    // console.log(experience);
+// reducing user years of experience
 
-    // returning NaN. Trying to perform math operation on something that is not
-    // a number, but what? When calling the properties by index it works in individual
-    // logs...
+    let sumExp = users.reduce(function (totalExperienceSoFar, user) {
+        return totalExperienceSoFar + user.yearsOfExperience;
+    }, 0);
+    console.log(`Total years of experience: ${sumExp}`);
+    console.log(`Average years of experience: ${sumExp / users.length}`);
 
-    // let test = users.reduce((accumulation, currentValue) => accumulation.yearsOfExperience + currentValue.yearsOfExperience);
-    // console.log(test);
+// reducing user longest email
 
-    const sumExp = users.reduce((experienceSoFar, author) => experienceSoFar + author.yearsOfExperience, 0);
-    console.log(sumExp);
-    console.log(sumExp / users.length);
+    let longestEmail = users.reduce(function (longestEmailSoFar, user) {
+        if (user.email.length > longestEmailSoFar.length) {
+            return user.email
+        } else {
+            return longestEmailSoFar;
+        }
+    }, "")
+    console.log(`The longest email is: ${longestEmail}`);
+
+// reducing list of user names to single string
+
+    let userNames = users.reduce(function (userNamesSoFar, user) {
+        return userNamesSoFar + user.name + ", ";
+    }, "")
+    console.log(userNames.substring(userNames.length - 2, 0));
+
+// bonus unique list of languages using reduce
+
+    let uniqueLanguages = users.reduce(function (setOfUniqueLanguagesSoFar, user) {
+        for (let language of user.languages) {
+            setOfUniqueLanguagesSoFar.add(language)
+        }
+        return setOfUniqueLanguagesSoFar;
+    }, new Set());
+    console.log(uniqueLanguages);
 
 })();
