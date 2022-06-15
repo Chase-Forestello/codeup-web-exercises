@@ -48,9 +48,11 @@
      * and console.log the relevant messages for each person
      */
 
+// HEB problem
+
     var shoppers = [{name: 'Cameron', amount: 180}, {name: 'Ryan', amount: 250}, {name: 'George', amount: 320}];
     shoppers.forEach(function (x) {
-        // if shopper spends more than $200
+        // if shopper spends more than $200 apply discount
         if (x.amount > 200) {
             let discount = x.amount * .12;
             let newAmount = x.amount - discount;
@@ -72,6 +74,8 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+// books array
 
     let books = [{
         title: "Escape From Furnace", author: {
@@ -124,13 +128,21 @@
      *      ...
      */
 
+// Original forEach loop
+
+//     books.forEach(function (x, y) {
+//         let output = `Book # ${y + 1}
+// Title: ${x.title}
+// Author: ${x.author.firstName} ${x.author.lastName}`
+//         console.log(output);
+//     });
+
+// forEach loop refactored with showBookInfo function
+
     books.forEach(function (x, y) {
-        let output = `Book # ${y + 1}
-Title: ${x.title}
-Author: ${x.author.firstName} ${x.author.lastName}`
+        let output = showBookInfo(y)
         console.log(output);
     });
-
 
     /**
      * Bonus:
@@ -143,7 +155,7 @@ Author: ${x.author.firstName} ${x.author.lastName}`
      *   `showBookInfo` function.
      */
 
-// sorta working but not efficient or automated
+// createBook function
 
     function CreateBook(bookTitle, authorName) {
         return {
@@ -161,9 +173,12 @@ Author: ${x.author.firstName} ${x.author.lastName}`
     CreatedBooksArray.push(CreateBook("The Underneath", "Kathi Appelt"));
     console.log(CreatedBooksArray);
 
+// showBookInfo function
 
-    /*
-        Show book info function!!
-    */
+    function showBookInfo(book) {
+        return books[book]
+    }
+
+    console.log(showBookInfo(1));
 
 })();
