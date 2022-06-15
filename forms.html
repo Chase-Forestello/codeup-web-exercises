@@ -1,0 +1,55 @@
+<!-- Complete - HTML & CSS - HTML Forms - Exercise -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Register With Us</title>
+    </head>
+    <body>
+    <div id="wrapper">
+        <form method="POST" action="https://request-inspector.glitch.me">
+            <section id="login">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="text" placeholder="Email">
+                <br>
+                <label for="password">Password:</label>
+                <input id="password" name="password" type="password" placeholder="Password">
+                <br>
+                <br>
+            </section>
+            <section id="User bio">
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" placeholder="Fill out a short biography."></textarea>
+            </section>
+            <br>
+            <section id="How did you hear about us?">
+                <label for="How did you hear about us?">How did you hear about us?
+                    <br>
+                    <br>
+                    <label for="billboard">Billboard<input type="radio" id="billboard" name="HDYHAU1"
+                                                           value="billboard"></label><br>
+                    <label for="radio">Radio Advertisement<input type="radio" id="radio" name="HDYHAU2"
+                                                                 value="radio advertisement"></label><br>
+                    <label for="internet">Internet Advertisement<input type="radio" id="internet" name="HDYHAU3"
+                                                                       value="internet advertisement"></label><br>
+                    <label for="other">Other<input type="radio" id="other" name="HDYHAU4" value="other"></label>
+                </label>
+            </section>
+            <br>
+            <section id="browser">
+                <label for="browserselect">What web browser are you using?
+                    <br>
+                    <br>
+                    <select id="browserselect" name="browser">
+                        <option value="Chrome">Chrome</option>
+                        <option value="Brave">Brave</option>
+                        <option value="Opera">Opera</option>
+                        <option value="Firefox">Firefox</option>
+                    </select>
+                </label>
+            </section>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </body>
+</html>
