@@ -1,0 +1,35 @@
+/* Complete - CSS I - Box Model - Messages Exercise */
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+.messageBox {
+    height: 1.4em;
+    width: 40em;
+    border: 1px solid #d3d3d3;
+    border-radius: .5em;
+    margin: 1em;
+    padding-left: 1em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    font-weight: 400;
+}
+#message\ message-info {
+    background-color: #CEDFFF;
+    color: #463F9E;
+}
+#message\ message-success {
+    background-color: #CFF3DA;
+    color: #468E60;
+}
+#message\ message-warning {
+    background-color: #FDFBC9;
+    color: #98852F;
+}
+#message\ message-error {
+    background-color: #FAD3D7;
+    color: #8B263D;
+}
