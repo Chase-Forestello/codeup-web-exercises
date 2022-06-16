@@ -7,7 +7,7 @@
     </head>
     <body>
     <div id="wrapper">
-        <form method="POST" action="https://request-inspector.glitch.me">
+        <form method="POST" action="https://request-inspector.glitch.me" id="myForm">
             <section id="login">
                 <label for="email">Email:</label>
                 <input id="email" name="email" type="text" placeholder="Email">
@@ -19,7 +19,7 @@
             </section>
             <section id="User bio">
                 <label for="bio">Bio:</label>
-                <textarea id="bio" name="bio" placeholder="Fill out a short biography."></textarea>
+                <textarea id="bio" name="bio" form="myForm" cols="45" rows="5" placeholder="Fill out a short biography."></textarea>
             </section>
             <br>
             <hr>
