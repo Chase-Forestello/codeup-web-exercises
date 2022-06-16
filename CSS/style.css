@@ -1,5 +1,45 @@
 /* Complete - CSS I - Intro to CSS - Exercise */
+/* Complete - CSS I - Selectors and Properties - Selectors and Properties Exercise */
+
 .fancy-header {
     color: purple;
     text-decoration: underline;
+    text-align: center;
 }
+h2 {
+    text-decoration: underline;
+}
+body {
+    background-color: #ffe4c4;
+    background-image: url("img/welcomebackground.jpeg");
+    font-family: 'Raleway', sans-serif;;
+}
+ul {
+    list-style: square;
+}
+td, tr {
+    padding: 5px 20px;
+    font-size: 1em;
+}
+th {
+    font-size: 1.2em;
+}
+a:link {
+    color:#0ff;
+}
+
+a:visited {
+    color:#000;
+}
+
+a:hover {
+    color:#fff;
+}
+
+a:active {
+    color:#008000;
+}
+img {
+    border: solid;
+}
+
