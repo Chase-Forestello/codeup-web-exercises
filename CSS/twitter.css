@@ -95,7 +95,7 @@ a {
 
 .profile-image {
     position: absolute;
-    top: 14.8em;
+    top: 15.5em;
 }
 
 .profile-form {
@@ -127,9 +127,9 @@ a {
 }
 .media {
     width: 100%;
-    background-color: white;
+    background-color: #FFF;
     border-bottom: solid 1px;
-    border-color: lightslategray;
+    border-color: #DDD;
     padding: 0.5em;
     overflow: hidden;
 }
