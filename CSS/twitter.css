@@ -32,7 +32,7 @@ a {
 }
 
 .top-nav {
-    background: var(--light-bg);
+    background: #ffffff73;
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -45,7 +45,7 @@ a {
 }
 
 .nav-link {
-    color: var(--main-link-color);
+    color: #000000;
     font-weight: bold;
     text-decoration: none;
 }
@@ -55,7 +55,7 @@ a {
 }
 
 .profile {
-    background: var(--light-bg);
+    background: #ffffff73;
     height: 80px;
 }
 
@@ -118,7 +118,7 @@ a {
 
 .timeline {
     width: calc(50% - .5em);
-    margin-left: .5em;
+    margin-left: -1.5em;
     margin-right: .5em;
     float: left;
 }
