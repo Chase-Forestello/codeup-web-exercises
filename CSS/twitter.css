@@ -1,4 +1,4 @@
-/* Incomplete - CSS I - Positioning - Twitter Exercise */
+/* Complete - CSS I - Positioning - Twitter Exercise */
 :root {
     --main-bg: #E6ECF0;
     --link-color: #3B94D9;
@@ -34,7 +34,7 @@ a {
 .top-nav {
     background: var(--light-bg);
     position: fixed;
-    z-index: 1000;
+    z-index: 1;
     width: 100%;
 }
 
@@ -123,7 +123,8 @@ a {
     float: left;
 }
 .container {
-    padding: 2em;
+    padding-top: 2em;
+    padding-right: 2em;
 }
 .media {
     width: 100%;
@@ -150,4 +151,9 @@ a {
     padding: 0;
 }
 
-/*Not exactly how the instruction wanted it done but similar result...*/
+/*Not exactly how the instruction wanted it done but similar result...
+not sure about overflow
+not sure about the positioning of profile items
+"who to follow" does not seem to fit when I try to float it right. Even double checked
+calc function. Width percentage minus the margin
+*/
