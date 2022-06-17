@@ -1,4 +1,4 @@
-/* Incomplete - CSS I - Positioning - Exercise */
+/* Incomplete - CSS I - Positioning - Twitter Exercise */
 :root {
     --main-bg: #E6ECF0;
     --link-color: #3B94D9;
@@ -6,9 +6,11 @@
     --light-bg: #FFF;
     --separator-color: #DDD;
 }
+
 * {
     box-sizing: border-box;
 }
+
 body, html {
     background-color: var(--main-bg);
     height: 100%;
@@ -17,37 +19,46 @@ body, html {
     padding: 0;
     font-family: Arial, Ubuntu, sans-serif;
 }
+
 header {
     background-image: url("https://picsum.photos/1200/300");
     background-size: cover;
     min-height: 300px;
     padding-top: 275px;
 }
+
 a {
     color: var(--link-color);
 }
+
 .top-nav {
     background: var(--light-bg);
     position: fixed;
+    z-index: 1000;
     width: 100%;
 }
+
 .nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 .nav-link {
     color: var(--main-link-color);
     font-weight: bold;
     text-decoration: none;
 }
+
 .nav-link:hover {
     color: var(--link-color);
 }
+
 .profile {
     background: var(--light-bg);
     height: 80px;
 }
+
 .btn {
     border: 1px solid var(--main-link-color);
     color: var(--main-link-color);
@@ -56,32 +67,87 @@ a {
     padding: 8px;
     border-radius: 5px;
 }
+
 .btn-large {
     font-size: 1.3em;
     padding: 10px;
     margin: 10px 0;
     height: 60px;
 }
+
 .img-circle {
     border-radius: 100%;
     border: 4px solid var(--light-bg);
 }
+
 .text-right {
     text-align: right;
 }
+
 .text-muted {
     color: var(--main-link-color);
 }
+
 .nav-item {
     display: inline-block;
     padding: 1.5em;
 }
+
 .profile-image {
     position: absolute;
-    top: 14.7em;
+    top: 14.8em;
 }
+
 .profile-form {
     float: right;
+}
+
+.profile-details {
+    width: calc(25% - .5em);
+    margin-left: .5em;
+    margin-right: .5em;
+    float: left;
+}
+
+.who-to-follow {
+    width: calc(25% - .5em);
+    margin-left: -1.5em;
+    margin-right: -1.5em;
+    float: right;
+}
+
+.timeline {
+    width: calc(50% - .5em);
+    margin-left: .5em;
+    margin-right: .5em;
+    float: left;
+}
+.container {
+    padding: 2em;
+}
+.media {
+    width: 100%;
+    background-color: white;
+    border-bottom: solid 1px;
+    border-color: lightslategray;
+    padding: 0.5em;
+    overflow: hidden;
+}
+.media-image {
+    max-width: 50px;
+    float: left;
+    margin-top: 1.33em;
+}
+.media-body {
+    width: calc(100% - 50px);
+    float: left;
+}
+.profile-entry {
+    margin: .5em;
+}
+.profile-items {
+    list-style: none;
+    padding: 0;
 }
 
 /* left off at avatar and edit button */
