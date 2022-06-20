@@ -1,0 +1,36 @@
+/* Incomplete - HTML & CSS - CSS I - Flexbox - Flexbox in Practice Exercise 3 */
+/* https://github.com/CodeupClassroom/venus-web-exercises/commit/11c19105f1c1ebec58055d0079b58e0b6ad8115d */
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #0000ff;
+}
+nav {
+    display: flex;
+    background-color: #c1c1c1;
+    color:black;
+
+}
+#logo{
+    width: 50%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    padding: .2em 0;
+
+}
+.nav-item {
+    margin:auto;
+    padding: 1em;
+    color: black;
+}
+
+.nav-icon {
+    padding: 1em;
+}
