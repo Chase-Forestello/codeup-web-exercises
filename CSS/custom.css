@@ -12,7 +12,7 @@ div.card {
     width: 100%;
 }
 .SignUp {
-    margin-left: 20em;
+    margin-left: 24em;
     text-decoration: none;
 }
 .titleBar {
@@ -24,8 +24,8 @@ label {
 .card-footer {
     height: 3em;
 }
-.nav-link {
-    padding: 0;
+.searchbox {
+    width: 25%;
 }
 
 /*     display: flex;
