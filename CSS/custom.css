@@ -1,3 +1,4 @@
+/* Complete - CSS II - Bootstrap Intro - Pizza Exercise */
 .docrob-tron {
     background-image: url("img/pizza.png");
     background-size: cover;
@@ -22,6 +23,9 @@ label {
 }
 .card-footer {
     height: 3em;
+}
+.nav-link {
+    padding: 0;
 }
 
 /*     display: flex;
