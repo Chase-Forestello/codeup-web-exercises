@@ -23,6 +23,9 @@ label {
 }
 .card-footer {
     height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 .searchbox {
     width: 25%;
