@@ -1,16 +1,17 @@
 (function () {
     "use strict";
 
-    var rank = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"];
+    var rank = ["A" , 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"];
     var suit = ["hearts", "clubs", "diamonds", "spades"];
     var deck = [];
+    console.log(rank[0] + 2)
 
     function getDeck() {
         var deck = [];
 
         for (var i = 0; i < suit.length; i++) {
             for (var x = 0; x < rank.length; x++) {
-                var card = {Value: rank[x], Suit: suit[i]};
+                var card = {Rank: rank[x], Suit: suit[i]};
                 deck.push(card);
             }
         }
@@ -64,6 +65,8 @@
         botHand.unshift(botDealOut1, botDealOut2);
         console.log(userHand);
         console.log(botHand);
+        document.write(`Your hand is: [${userHand[0].Rank} ${userHand[0].Suit}] and [${userHand[1].Rank} ${userHand[1].Suit}] <br>`);
+        document.write(`Bot hand is: [${botHand[0].Rank} ${botHand[0].Suit}] and [${botHand[1].Rank} ${botHand[1].Suit}]`);
     } else {
         alert(`Thanks anyways!`);
     }
