@@ -17,7 +17,6 @@
         return deck;
     }
 
-    console.log(getDeck());
     var botHand = [];
     var userHand = [];
     var user = 0; //user score
@@ -33,7 +32,38 @@
         bot = 0;
 
         alert(score);
+        function shuffleCards(array) {
+            let currentIndex = array.length,  randomIndex;
 
+            // While there remain elements to shuffle.
+            while (currentIndex !== 0) {
+
+                // Pick a remaining element.
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+
+                // And swap it with the current element.
+                [array[currentIndex], array[randomIndex]] = [
+                    array[randomIndex], array[currentIndex]];
+            }
+
+            return array;
+        }
+        deck = getDeck();
+        shuffleCards(deck);
+        console.log(deck);
+        let userDealOut1 = deck.pop();
+        console.log(userDealOut1);
+        let userDealOut2 = deck.pop();
+        console.log(userDealOut2);
+        let botDealOut1 = deck.pop();
+        console.log(botDealOut1);
+        let botDealOut2 = deck.pop();
+        console.log(botDealOut2);
+        userHand.unshift(userDealOut1, userDealOut2);
+        botHand.unshift(botDealOut1, botDealOut2);
+        console.log(userHand);
+        console.log(botHand);
     } else {
         alert(`Thanks anyways!`);
     }
