@@ -1,4 +1,4 @@
-// Complete - JavaScript I - Objects - Math exercise
+// Complete - JavaScript I - Objects - Math Exercise
 (function () {
     "use strict";
 
