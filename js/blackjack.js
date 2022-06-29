@@ -18,7 +18,8 @@
     }
 
     console.log(getDeck());
-
+    var botHand = [];
+    var userHand = [];
     var user = 0; //user score
     var bot = 0; //bot score
     let score = `Your score: ${user} Computer score: ${bot}`
@@ -26,6 +27,15 @@
     console.log(`Let's play Blackjack!`);
     alert(score);
     console.log(score);
-    confirm(`Play `)
+    let start = confirm(`Main Menu:\n1. "OK" to Play Blackjack\n2. "Cancel" to Exit the game`);
+    if (start) {
+        user = 0;
+        bot = 0;
+
+        alert(score);
+
+    } else {
+        alert(`Thanks anyways!`);
+    }
 
 })()
