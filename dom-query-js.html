@@ -1,4 +1,4 @@
-<!-- Complete - JavaScript I - BOM & DOM - DOM Exercise -->
+<!-- Complete - JavaScript I - BOM & DOM - DOM Exercises -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,7 +7,10 @@
     </head>
     <body>
         <div id="wrapper">
+            <button id="btn1">JavaScript is cool!</button>
             <h1 id="main-header">Hello World!</h1>
+            <button id="btn3">Every other list item grey!</button>
+            <button id="btn4">dbid = 1 to blue!</button>
             <ul>
                 <li data-dbid="1">Item 1</li>
                 <li data-dbid="2">Item 2</li>
@@ -15,7 +18,9 @@
                 <li data-dbid="4">Item 4</li>
                 <li data-dbid="5">Item 5</li>
             </ul>
+            <button id="btn2">Sub-header blue!</button>
             <h2 id="sub-header">Hello Again.</h2>
+            <button id="btn5">Mission Accomplished!</button>
             <p class="sub-paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -32,13 +37,22 @@
                     var mainHeader = document.getElementById("main-header") ;
             
                     // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-                    mainHeader.innerText = "JavaScript is Cool"
-            
+                    var listener1 = function(event) {
+                        mainHeader.innerText = "JavaScript is Cool"
+                    }
+                    var btn1 = document.getElementById("btn1");
+                    btn1.addEventListener("click", listener1);
+
                     // TODO: Uncomment the next line and get the sub header element by id
                     var subHeader = document.getElementById("sub-header");
             
                     // TODO: Set the text color of subHeader to blue
-                    subHeader.style.color = "#00F"
+                    var listener2 = function (event) {
+                        subHeader.style.color = "#00F"
+                    }
+                    var btn2 = document.getElementById("btn2");
+                    btn2.addEventListener("click",listener2);
+
                     // TODO: Uncomment the next line and get all list items
                     var listItems = document.getElementsByTagName("li");
                     for (let i = 0; i < listItems.length; i++) {
@@ -46,19 +60,32 @@
                     }
 
                     // TODO: Set text color on every other list item to grey
-                    for (let i = 0; i < listItems.length; i+=2) {
-                        listItems[i].style.color = "#808080"
+                    var listener3 = function(event) {
+                        for (let i = 0; i < listItems.length; i+=2) {
+                            listItems[i].style.color = "#808080"
+                        }
                     }
+                    var btn3 = document.getElementById("btn3");
+                    btn3.addEventListener("click", listener3);
+
                     // TODO: Set text color of li with dbid = 1 to blue
-                    var li1 = document.querySelector(`[data-dbid= "1"]`)
-                    li1.style.color = "#00F"
+                    var listener4 = function (event) {
+                        var li1 = document.querySelector(`[data-dbid= "1"]`)
+                        li1.style.color = "#00F"
+                    }
+                    var btn4 = document.getElementById("btn4");
+                    btn4.addEventListener("click", listener4);
 
                     // TODO: Uncomment the next line and get all elements with class name sub-paragraph
                     var subParagraphs = document.getElementsByClassName("sub-paragraph");
                     console.log(subParagraphs);
 
                     // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-                    subParagraphs[0].innerText = "Mission Accomplished!";
+                    var listener5 = function (event) {
+                        subParagraphs[0].innerText = "Mission Accomplished!";
+                    }
+                    var btn5 = document.getElementById("btn5");
+                    btn5.addEventListener("click", listener5);
 
                 })();
             </script>
