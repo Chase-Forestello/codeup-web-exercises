@@ -37,7 +37,7 @@
         user = 0;
         bot = 0;
         document.write(`${score} <hr>`);
-        console.log(score);
+        console.log(`Your score: [${user}] Computer score: [${bot}]`);
         function shuffleCards(array) {
             let currentIndex = array.length,  randomIndex;
 
@@ -67,6 +67,7 @@
         }
         console.log(userHand);
         console.log(botHand);
+        console.log(deck);
 
         // let userDealOut1 = deck.pop();
         // console.log(userDealOut1);
@@ -80,18 +81,19 @@
         // botHand.unshift(botDealOut1, botDealOut2);
         // console.log(userHand);
         // console.log(botHand);
-        console.log(userHand[0].value);
-        document.write(`Your hand is: [${userHand[0].Rank} ${userHand[0].Suit}] and [${userHand[1].Rank} ${userHand[1].Suit}] &nbsp &nbsp &nbsp Total = ${userHand[0].Value + userHand[1].Value} <hr>`);
+        console.log(`Your count is = ${userHand[0].Value + userHand[1].Value}`);
+        document.write(`Your hand is: [${userHand[0].Rank} ${userHand[0].Suit}] and [${userHand[1].Rank} ${userHand[1].Suit}] &nbsp &nbsp &nbsp Count = ${userHand[0].Value + userHand[1].Value} <hr>`);
         document.write(`Bot hand is: [----] and [${botHand[1].Rank} ${botHand[1].Suit}] <hr>`);
-        while (true) {
-            let gameMenu = prompt(`Enter 1 to [Hit] \nEnter 2 to [Stand]\nEnter 3 to [Return to main menu]`)
-            if (gameMenu === "1" || gameMenu === "2" || gameMenu === "3") {
-                break;
-            }
+        let gameMenu = prompt(`Enter 1 to [Hit] \nEnter 2 to [Stand]\nEnter 3 to [Return to main menu]`)
+        if (gameMenu === "1") {
+            userHand.unshift(deck.pop())
         }
+        console.log(userHand);
         //trying to continue prompting user with gameMenu until the select a valid option (1, 2, 3)
+        //works, may need console logs
+        //maybe use button event to hit / stand
     } else {
-        alert(`Thanks anyways!`);
+        alert(`Game canceled. Thanks anyways!`);
     }
 
 })()
