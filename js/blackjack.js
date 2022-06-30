@@ -83,9 +83,9 @@
         console.log(userHand[0].value);
         document.write(`Your hand is: [${userHand[0].Rank} ${userHand[0].Suit}] and [${userHand[1].Rank} ${userHand[1].Suit}] &nbsp &nbsp &nbsp Total = ${userHand[0].Value + userHand[1].Value} <hr>`);
         document.write(`Bot hand is: [----] and [${botHand[1].Rank} ${botHand[1].Suit}] <hr>`);
-        let gameMenu = prompt(`Enter 1 to [Hit] \nEnter 2 to [Stand]\nEnter 3 to [Return to main menu]`)
         while (true) {
-            if (gameMenu === "1" || "2" || "3") {
+            let gameMenu = prompt(`Enter 1 to [Hit] \nEnter 2 to [Stand]\nEnter 3 to [Return to main menu]`)
+            if (gameMenu === "1" || gameMenu === "2" || gameMenu === "3") {
                 break;
             }
         }
