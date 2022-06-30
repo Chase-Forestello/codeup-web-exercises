@@ -1,6 +1,5 @@
 (function () {
     "use strict";
-
     var rank = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"];
     var suit = ["hearts", "clubs", "diamonds", "spades"];
     var deck = [];
@@ -30,14 +29,15 @@
     var user = 0; //user score
     var bot = 0; //bot score
     let score = `Your score: [${user}] &nbsp &nbsp &nbsp Computer score: [${bot}]`
-    alert(`Let's play Blackjack!`)
-    console.log(`Let's play Blackjack!`);
-    let start = confirm(`Main Menu:\n1. "OK" to Play Blackjack\n2. "Cancel" to Exit the game`);
-    if (start) {
-        user = 0;
-        bot = 0;
+    var listener1 = function(event) {
+        alert(`Let's play Blackjack!`)
         document.write(`${score} <hr>`);
-        console.log(`Your score: [${user}] Computer score: [${bot}]`);
+        document.write(`<button id="btn2">Deal!</button>`)
+    }
+    console.log(`Let's play Blackjack!`);
+    var btn1 = document.getElementById("btn1");
+    btn1.addEventListener("click", listener1);
+    var listener2 = function(event) {
         function shuffleCards(array) {
             let currentIndex = array.length,  randomIndex;
 
@@ -59,6 +59,16 @@
         shuffleCards(deck);
         console.log(deck);
         alert(`Shuffling deck!`);
+    }
+    var btn2 = document.getElementById('btn2');
+    btn2.addEventListener("click", listener2);
+
+    let start = confirm(`Main Menu:\n1. "OK" to Play Blackjack\n2. "Cancel" to Exit the game`);
+    if (start) {
+        user = 0;
+        bot = 0;
+        document.write(`${score} <hr>`);
+        console.log(`Your score: [${user}] Computer score: [${bot}]`);
         // could use a for loop and iterate through empty userHand popping until it's length is greater than 2 (dealOut)
         // then pop a single card each hit that follows (totally worked)
         for (let i = 0; i < 2; i++) {
@@ -96,4 +106,4 @@
         alert(`Game canceled. Thanks anyways!`);
     }
 
-})()
+})();
