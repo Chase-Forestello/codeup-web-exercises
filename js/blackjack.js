@@ -32,36 +32,17 @@
     var listener1 = function(event) {
         alert(`Let's play Blackjack!`)
         document.write(`${score} <hr>`);
-        document.write(`<button id="btn2">Deal!</button>`)
+        document.createElement('button');
+        document.write(`<button id="btn">Deal!</button>`) // how to talk to this? Should I use createElement?
     }
     console.log(`Let's play Blackjack!`);
     var btn1 = document.getElementById("btn1");
     btn1.addEventListener("click", listener1);
     var listener2 = function(event) {
-        function shuffleCards(array) {
-            let currentIndex = array.length,  randomIndex;
-
-            // While there remain elements to shuffle.
-            while (currentIndex !== 0) {
-
-                // Pick a remaining element.
-                randomIndex = Math.floor(Math.random() * currentIndex);
-                currentIndex--;
-
-                // And swap it with the current element.
-                [array[currentIndex], array[randomIndex]] = [
-                    array[randomIndex], array[currentIndex]];
-            }
-
-            return array;
-        }
-        deck = getDeck();
-        shuffleCards(deck);
-        console.log(deck);
-        alert(`Shuffling deck!`);
+        console.log("hello");
     }
-    var btn2 = document.getElementById('btn2');
-    btn2.addEventListener("click", listener2);
+
+    btn.addEventListener("click", listener2);
 
     let start = confirm(`Main Menu:\n1. "OK" to Play Blackjack\n2. "Cancel" to Exit the game`);
     if (start) {
