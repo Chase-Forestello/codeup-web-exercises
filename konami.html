@@ -1,42 +1,63 @@
+<!-- Complete - JavaScript I - Events - Keyboard Events Exercise -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Konami Code</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="">
-    <script src="https://kit.fontawesome.com/26f09e8c8b.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<div id="wrapper">
-    <h1 class="text-center">Konami Code?</h1>
+    <head>
+        <title>Konami Code</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS/konami.css">
+        <script src="https://kit.fontawesome.com/26f09e8c8b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1 class="text-center">Konami Code?</h1>
+            <img id="pic" src="CSS/img/konami-code.jpg" alt="konami code">
+            <button id="fakeArrowUp" type="button">test</button>
 
-    <script>
-        "use strict";
-        let konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a']
-        let current = 0;
-        document.addEventListener("keyup", function(event) {
-            if (konamiCode.indexOf(event.key) < 0 || event.key !== konamiCode[current]) {
-                current = -1;
-                console.log(current);
-            }
-            current++;
-            if (current === 10) {
-                console.log(`made it`);
-                let body = document.getElementById('wrapper')
-                document.body.style.backgroundImage = "url('img/konami-code.jpg')";
-                document.body.style.backgroundSize = "cover"
-            }
-        });
+            <script>
+                "use strict";
+                let konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+                let current = 0;
+                document.addEventListener("keyup", function (event) {
+                    if (konamiCode.indexOf(event.key) < 0 || event.key !== konamiCode[current]) {
+                        current = -1;
+                        console.log(event.key);
+                        console.log(current);
+                    }
+                    current++;
+                    if (current === 10) {
+                        console.log(`made it`);
+                        let img = document.getElementById('pic');
+                        img.style.display = 'block'
 
+                    }
+                });
 
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous">
-    </script>
-</div>
-</body>
+                // Simulating keyboard events (accessibility / make NES buttons)
+                // let fakeArrowUpEvent = new KeyboardEvent('keyup', {
+                //     'key': 'ArrowUp'
+                // })
+                // let fakeArrowDown = new KeyboardEvent('keyup', {
+                //     'key': 'ArrowUp'
+                // })
+                //
+                // document.dispatchEvent(fakeArrowDown)
+                //
+                //
+                // function arrowUp() {
+                //     document.dispatchEvent(fakeArrowUpEvent)
+                // }
+                //
+                // let fakeArrowUp = document.getElementById('fakeArrowUp')
+                // fakeArrowUp.addEventListener("click", arrowUp)
+
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                    crossorigin="anonymous">
+            </script>
+        </div>
+    </body>
 </html>
