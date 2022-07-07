@@ -1,3 +1,4 @@
+// Complete - JavaScript I - DOM Traversal
 (function () {
     "use strict";
 
