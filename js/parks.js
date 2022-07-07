@@ -1,4 +1,4 @@
-// Complete - JavaScript I - DOM Traversal
+// Incomplete - JavaScript I - DOM Traversal
 (function () {
     "use strict";
 
