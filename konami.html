@@ -12,13 +12,59 @@
     </head>
     <body>
         <div id="wrapper">
-            <h1 class="text-center">Konami Code?</h1>
-            <img id="pic" src="CSS/img/konami-code.jpg" alt="konami code">
-            <button id="fakeArrowUp" type="button">test</button>
+            <div class="cable"></div>
+            <div class="controller">
+                <div class="base">
+                    <div class="front">
+                        <div class="decoration">
+                            <div class="stickers">
+                                <div class="st-a">A</div>
+                                <div class="st-b">B</div>
+                                <div class="st-select">SELECT</div>
+                                <div class="st-start">START</div>
+                            </div>
+                            <div class="decoration-central">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+
+                        </div>
+                        <div class="cross">
+                            <div class="circle"></div>
+                            <div class="vertical">
+                                <div id="fakeArrowDown" class="arrowlf"></div>
+                                <div id="fakeArrowUp" class="arrowrh"></div>
+                            </div>
+                            <div class="horizontal">
+                                <div id="fakeArrowRight" class="arrowlf"></div>
+                                <div id="fakeArrowLeft" class="arrowrh"></div>
+                            </div>
+                            <div class="back-cross">
+                                <div class="horiz"></div>
+                                <div class="vert"></div>
+                            </div>
+                        </div>
+                        <div class="buttons-a-b">
+                            <div class="btn-border"><div id="fakeB" class="btn-round a"></div></div>
+                            <div class="btn-border"><div id="fakeA" class="btn-round b"></div></div>
+                        </div>
+                        <div class="buttons-select">
+                            <div class="btn-central select"></div>
+                            <div class="btn-central start"></div>
+                        </div>
+                    </div>
+                </div>
+            <p><h1 class="text-center">Konami Code?</h1></p>
+            </div>
+
+
 
             <script>
                 "use strict";
-                let konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+                let konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'B', 'A'];
                 let current = 0;
                 document.addEventListener("keyup", function (event) {
                     if (konamiCode.indexOf(event.key) < 0 || event.key !== konamiCode[current]) {
@@ -29,29 +75,85 @@
                     current++;
                     if (current === 10) {
                         console.log(`made it`);
+                        alert(`You gained 30 lives!`)
                         let img = document.getElementById('pic');
                         img.style.display = 'block'
 
                     }
                 });
 
-                // Simulating keyboard events (accessibility / make NES buttons)
-                // let fakeArrowUpEvent = new KeyboardEvent('keyup', {
-                //     'key': 'ArrowUp'
-                // })
-                // let fakeArrowDown = new KeyboardEvent('keyup', {
-                //     'key': 'ArrowUp'
-                // })
-                //
-                // document.dispatchEvent(fakeArrowDown)
-                //
-                //
-                // function arrowUp() {
-                //     document.dispatchEvent(fakeArrowUpEvent)
-                // }
-                //
-                // let fakeArrowUp = document.getElementById('fakeArrowUp')
-                // fakeArrowUp.addEventListener("click", arrowUp)
+                //Simulating keyboard events (accessibility / make NES buttons)
+                let fakeArrowUp = document.getElementById('fakeArrowUp')
+
+                fakeArrowUp.addEventListener("click", arrowUp)
+
+                function arrowUp() {
+                    document.dispatchEvent(fakeArrowUpEvent)
+                }
+                let fakeArrowUpEvent = new KeyboardEvent('keyup', {
+                    'key': 'ArrowUp'
+                })
+
+
+                let fakeArrowDown = document.getElementById('fakeArrowDown')
+
+                fakeArrowDown.addEventListener("click", arrowDown)
+
+                function arrowDown() {
+                    document.dispatchEvent(fakeArrowDownEvent)
+                }
+                let fakeArrowDownEvent = new KeyboardEvent('keyup', {
+                    'key': 'ArrowDown'
+                })
+
+
+                let fakeArrowLeft = document.getElementById('fakeArrowLeft')
+
+                fakeArrowLeft.addEventListener("click", arrowLeft)
+
+                function arrowLeft() {
+                    document.dispatchEvent(fakeArrowLeftEvent)
+                }
+                let fakeArrowLeftEvent = new KeyboardEvent('keyup', {
+                    'key': 'ArrowLeft'
+                })
+
+
+                let fakeArrowRight = document.getElementById('fakeArrowRight')
+
+                fakeArrowRight.addEventListener("click", arrowRight)
+
+                function arrowRight() {
+                    document.dispatchEvent(fakeArrowRightEvent)
+                }
+                let fakeArrowRightEvent = new KeyboardEvent('keyup', {
+                    'key': 'ArrowRight'
+                })
+
+
+                let fakeAkey = document.getElementById('fakeA')
+
+                fakeAkey.addEventListener("click", Akey)
+
+                function Akey() {
+                    document.dispatchEvent(fakeAEvent)
+                }
+                let fakeAEvent = new KeyboardEvent('keyup', {
+                    'key': 'A'
+                })
+
+                let fakeB = document.getElementById('fakeB')
+
+                fakeB.addEventListener("click", B)
+
+                function B () {
+                    document.dispatchEvent(fakeBEvent)
+                }
+                let fakeBEvent = new KeyboardEvent('keyup', {
+                    'key': 'B'
+                })
+
+
 
             </script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
