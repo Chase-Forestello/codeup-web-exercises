@@ -1,9 +1,17 @@
 
 @import url(https://fonts.googleapis.com/css?family=Orbitron);
+
+canvas {
+    background-color: black;
+    display: none;
+}
+
 html,body {
     font-family: monospace;
     background-color: #4B4E43;
     height: 99%;
+    margin: 0;
+    padding: 0;
 }
 .controller {
     width: 500px;
