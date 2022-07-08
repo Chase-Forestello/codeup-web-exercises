@@ -1,0 +1,19 @@
+/* Incomplete - JavaScript I - DOM Add & Remove */
+#my-form {
+    width: 400px;
+}
+.card-footer {
+    background-color: transparent!important;
+    align-self: center;
+}
+/* row color */
+div.row {
+    border: 1px dashed blue;
+}
+/* cell color */
+div.row > div {
+    border: 1px solid red;
+}
+div.tall-row {
+    height: 300px;
+}
