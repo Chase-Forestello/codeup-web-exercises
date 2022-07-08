@@ -1,4 +1,77 @@
-/* Incomplete - JavaScript I - DOM Traversal */
+/* Complete - JavaScript I - DOM Traversal */
 h3:hover {
     cursor: pointer;
+}
+#inviso-toggle {
+    margin-bottom: 3em;
+}
+.orange-bg {
+    background-color: orange;
+}
+dt {
+    cursor: pointer;
+}
+.li-bold {
+    font-weight: bold;
+}
+.yellow-bg {
+    background-color: yellow;
+}
+.click {
+    font-size: 5px;
+}
+.blue-text {
+    color: blue;
+}
+li:hover {
+    cursor: pointer;
+}
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 1;
+    min-width: 100%;
+    min-height: 100%
+}
+.container {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+#picture1 {
+    height: 20em;
+    width: 15em;
+    border: solid saddlebrown 5px;
+
+}
+#picture2 {
+    height: 20em;
+    width: 15em;
+    border: solid saddlebrown 5px;
+
+}
+#picture3 {
+    height: 20em;
+    width: 15em;
+    border: solid saddlebrown 5px;
+
+}
+#swapBtns {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.btnContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+.swapBtn {
+    width: 50%;
+    align-self: center;
+    margin-top: 1em;
 }

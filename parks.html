@@ -1,4 +1,4 @@
-<!-- Incomplete - JavaScript I - DOM Traversal -->
+<!-- Complete - JavaScript I - DOM Traversal -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,70 +14,95 @@
         <div id="wrapper">
             <h1>National Parks FAQ</h1>
             <dl>
-                <dt>How many people visit the national parks?</dt>
+                <dt>How many people visit the national parks?<span class="click">(click)</span></dt>
                 <dd>Total recreation visitors to the national parks in 2018: 318,211,833.</dd>
 
-                <dt>How old is the National Park System?</dt>
+                <dt>How old is the National Park System?<span class="click">(click)</span></dt>
                 <dd>The National Park Service was created by an act signed by President Woodrow Wilson on August 25, 1916.</dd>
 
-                <dt>How many employees are in the National Park Service?</dt>
+                <dt>How many employees are in the National Park Service?<span class="click">(click)</span></dt>
                 <dd>Permanent, temporary, and seasonal employees: More than 20,000</dd>
 
-                <dt>What is the origin of the National Park Service arrowhead?</dt>
+                <dt>What is the origin of the National Park Service arrowhead?<span class="click">(click)</span></dt>
                 <dd>The arrowhead was authorized as the official National Park Service emblem by the Secretary of the Interior on July 20, 1951.</dd>
 
-                <dt>How many areas are in the National Park System?</dt>
+                <dt>How many areas are in the National Park System?<span class="click">(click)</span></dt>
                 <dd>The system includes 419 areas covering more than 85 million acres in every state, the District of Columbia, American Samoa, Guam, Puerto Rico, and the Virgin Islands.</dd>
 
-                <dt>What is the largest national park site?</dt>
+                <dt>What is the largest national park site?<span class="click">(click)</span></dt>
                 <dd>Wrangell-St. Elias National Park and Preserve, AK, at 13.2 million acres.</dd>
 
-                <dt>What is the National Park Service budget?</dt>
+                <dt>What is the National Park Service budget?<span class="click">(click)</span></dt>
                 <dd>Fiscal Year (FY) 2014 Enacted: $2.98 billion.</dd>
 
-                <dt>Can I bring my pet to a national park?</dt>
+                <dt>Can I bring my pet to a national park?<span class="click">(click)</span></dt>
                 <dd>Some national parks welcome pets—in developed areas, on many trails and campgrounds, and in some lodging facilities.</dd>
 
-                <dt>How do I apply for a job with the National Park Service?</dt>
+                <dt>How do I apply for a job with the National Park Service?<span class="click">(click)</span></dt>
                 <dd>National Park Service jobs, including both permanent and seasonal positions, are listed on USAJOBs.</dd>
-
-                <dt>What do I need to know about driving off road in national parks?</dt>
+                <dt>What do I need to know about driving off road in national parks?<span class="click">(click)</span></dt>
                 <dd>Before you head out, check with the national parks that you intend to visit. In many national parks, off-road driving is illegal. Where off-road driving is allowed, the National Park Service regulates it.</dd>
             </dl>
+            <button type="button" id="inviso-toggle">Toggle Visibility</button>
             <div id="park1Div">
-                <h3 id="canyonlands">Canyonlands</h3>
+                <h3 id="canyonlands">Canyonlands<span class="click">(click)</span></h3>
                 <ul class="list">
-
                     <li>Canyonlands was made a national park on September 12, 1964</li>
                     <li>Butch Cassidy's gang hideout was located here.</li>
                     <li>Canyonlands has a combined area equivalent to 172,121 football fields.</li>
                     <li>The highest elevation found in Canyonlands is 7,120 feet at Cathedral Point</li>
                 </ul>
             </div>
-            <div id="park2Div">
-                <h3 id="yellowstone">Yellowstone</h3>
-                <ul class="list">
-                    <li>Yellowstone was made a national park on March 1, 1872</li>
-                    <li>There are more than 10,000 hydrothermal features in Yellowstone. </li>
-                    <li>There are more than 500 active geysers.</li>
-                    <li>Yellowstone is home to the largest concentration of mammals in the lower 48.</li>
-                </ul>
-            </div>
-            <div id="park3Div">
-                <h3 id="yosemite">Yosemite</h3>
-                <ul class="list">
-                    <li>Yosemite was made a national park on October 1, 1890.</li>
-                    <li>Yosemite contains giant Sequoias approximately 3,000 years old.</li>
-                    <li>John Muir, the father of conservation, spearheaded Yosemite's creation.</li>
-                    <li>Yosemite valley was formed by giant glaciers over one million years ago.</li>
-                </ul>
-            </div>
+                <div id="park2Div">
+                    <h3 id="yosemite">Yosemite<span class="click">(click)</span></h3>
+                    <ul class="list">
+                        <li>Yosemite was made a national park on October 1, 1890.</li>
+                        <li>Yosemite contains giant Sequoias approximately 3,000 years old.</li>
+                        <li>John Muir, the father of conservation, spearheaded Yosemite's creation.</li>
+                        <li>Yosemite valley was formed by giant glaciers over one million years ago.</li>
+                    </ul>
+                </div>
+                <div id="park3Div">
+                    <h3 id="yellowstone">Yellowstone<span class="click">(click)</span></h3>
+                    <ul class="list">
+                        <li>Yellowstone was made a national park on March 1, 1872</li>
+                        <li>There are more than 10,000 hydrothermal features in Yellowstone. </li>
+                        <li>There are more than 500 active geysers.</li>
+                        <li>Yellowstone is home to the largest concentration of mammals in the lower 48.</li>
+                    </ul>
+                </div>
             <button type="button" id="yellowBg">Feeling yellow</button>
-            <script src="js/parks.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-                    crossorigin="anonymous">
-            </script>
+
+            <div class="container">
+                <div class="btnContainer">
+                <div id="picture1" class="fill">
+                    <img id="mountains" src="CSS/img/stock1.jpeg" alt="stock mountain image">
+                </div>
+                    <button id="btn1" class="swapBtn" type="button">Swap</button>
+                </div>
+
+                <div class="btnContainer">
+                <div id="picture2" class="fill">
+                    <img id="bird" src="CSS/img/stock2.jpeg" alt="stock bird image">
+                </div>
+                    <button id="btn2" class="swapBtn" type="button">Swap</button>
+                </div>
+
+                <div class="btnContainer">
+                <div id="picture3" class="fill">
+                    <img id="lake" src="CSS/img/stock3.jpeg" alt="stock lake image">
+                </div>
+                    <button id="btn3" class='swapBtn' type="button">Swap</button>
+                </div>
+            </div>
+
+
+
         </div>
+        <script src="js/parks.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous">
+        </script>
     </body>
 </html>
