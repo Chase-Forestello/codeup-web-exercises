@@ -1,6 +1,16 @@
-
+/* Complete - JavaScript I - Key Events Konami Exercise */
 @import url(https://fonts.googleapis.com/css?family=Orbitron);
-
+/*!* row color *!*/
+/*div.row {*/
+/*    border: 1px dashed blue;*/
+/*}*/
+/*!* cell color *!*/
+/*div.row > div {*/
+/*    border: 1px solid red;*/
+/*}*/
+/*div.tall-row {*/
+/*    height: 300px;*/
+/*}*/
 canvas {
     background-color: black;
     display: none;

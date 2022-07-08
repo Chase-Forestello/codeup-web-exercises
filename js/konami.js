@@ -1,8 +1,8 @@
-// Complete - JavaScript I - Key Events Exercise
+// Complete - JavaScript I - Key Events Konami Exercise
 (function () {
     "use strict";
 
-    let konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'B', 'A'];
+    let konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
     let current = 0;
     document.addEventListener("keyup", function (event) {
         if (konamiCode.indexOf(event.key) < 0 || event.key !== konamiCode[current]) {
@@ -17,6 +17,15 @@
             psy.style.display = 'block'
             let hide = document.getElementById('hideController');
             hide.style.display = 'none'
+            setTimeout(timeout, 3000);
+            function timeout () {
+                addEventListener("click", function (event){
+                    location.reload();
+                })
+                addEventListener("keypress", function(event){
+                    location.reload();
+                })
+            }
         }
     });
 
@@ -137,7 +146,6 @@
         'key': 'ArrowRight'
     })
 
-
     let fakeAkey = document.getElementById('fakeA')
 
     fakeAkey.addEventListener("click", Akey)
@@ -147,7 +155,7 @@
     }
 
     let fakeAEvent = new KeyboardEvent('keyup', {
-        'key': 'A'
+        'key': 'a'
     })
 
     let fakeB = document.getElementById('fakeB')
@@ -157,9 +165,8 @@
     function B() {
         document.dispatchEvent(fakeBEvent)
     }
-
     let fakeBEvent = new KeyboardEvent('keyup', {
-        'key': 'B'
+        'key': 'b'
     })
 
 })()

@@ -1,71 +1,71 @@
-<!-- Complete - JavaScript I - Key Events Exercise -->
+<!-- Complete - JavaScript I - Key Events Konami Exercise -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Konami Code</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-              integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="CSS/konami.css">
-        <script src="https://kit.fontawesome.com/26f09e8c8b.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div id="wrapper">
-            <canvas id="canvas"></canvas>
-            <div id="hideController">
-                <div class="cable"></div>
-                <div class="controller">
-                    <div class="base">
-                        <div class="front">
-                            <div class="decoration">
-                                <div class="stickers">
-                                    <div class="st-a">A</div>
-                                    <div class="st-b">B</div>
-                                    <div class="st-select">SELECT</div>
-                                    <div class="st-start">START</div>
-                                </div>
-                                <div class="decoration-central">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                            </div>
-                            <div class="cross">
-                                <div class="circle"></div>
-                                <div class="vertical">
-                                    <div id="fakeArrowDown" class="arrowlf"></div>
-                                    <div id="fakeArrowUp" class="arrowrh"></div>
-                                </div>
-                                <div class="horizontal">
-                                    <div id="fakeArrowRight" class="arrowlf"></div>
-                                    <div id="fakeArrowLeft" class="arrowrh"></div>
-                                </div>
-                                <div class="back-cross">
-                                    <div class="horiz"></div>
-                                    <div class="vert"></div>
-                                </div>
-                            </div>
-                            <div class="buttons-a-b">
-                                <div class="btn-border"><div id="fakeB" class="btn-round a"></div></div>
-                                <div class="btn-border"><div id="fakeA" class="btn-round b"></div></div>
-                            </div>
-                            <div class="buttons-select">
-                                <div class="btn-central select"></div>
-                                <div class="btn-central start"></div>
-                            </div>
+<head>
+    <title>Konami Code</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="konami.css">
+    <script src="https://kit.fontawesome.com/26f09e8c8b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="wrapper">
+    <canvas id="canvas"></canvas>
+    <div id="hideController">
+        <div class="cable"></div>
+        <div class="controller">
+            <div class="base">
+                <div class="front">
+                    <div class="decoration">
+                        <div class="stickers">
+                            <div class="st-a">A</div>
+                            <div class="st-b">B</div>
+                            <div class="st-select">SELECT</div>
+                            <div class="st-start">START</div>
+                        </div>
+                        <div class="decoration-central">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
                     </div>
-                    <h1 class="text-center">Konami Code?<span class="text-muted fs-6">↑↑↓↓←→←→BA</span></h1><h6>CSS & Psychedelic canvas by: <a href="https://codepen.io/injectilo" target="_blank">injectilo</a></h6>
+                    <div class="cross">
+                        <div class="circle"></div>
+                        <div class="vertical">
+                            <div id="fakeArrowDown" class="arrowlf"></div>
+                            <div id="fakeArrowUp" class="arrowrh"></div>
+                        </div>
+                        <div class="horizontal">
+                            <div id="fakeArrowRight" class="arrowlf"></div>
+                            <div id="fakeArrowLeft" class="arrowrh"></div>
+                        </div>
+                        <div class="back-cross">
+                            <div class="horiz"></div>
+                            <div class="vert"></div>
+                        </div>
+                    </div>
+                    <div class="buttons-a-b">
+                        <div class="btn-border"><div id="fakeB" class="btn-round b"></div></div>
+                        <div class="btn-border"><div id="fakeA" class="btn-round a"></div></div>
+                    </div>
+                    <div class="buttons-select">
+                        <div class="btn-central select"></div>
+                        <div class="btn-central start"></div>
+                    </div>
                 </div>
             </div>
-            <script src="js/konami.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-                    crossorigin="anonymous">
-            </script>
+            <h1 class="text-center">Konami Code?<span class="text-muted fs-6">↑↑↓↓←→←→BA</span></h1><h6>NES Controller & Psychedelic canvas by: <a href="https://codepen.io/injectilo" target="_blank">injectilo</a></h6>
         </div>
-    </body>
+    </div>
+    <script src="konami.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous">
+    </script>
+</div>
+</body>
 </html>
