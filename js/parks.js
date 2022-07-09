@@ -54,7 +54,7 @@
     })
 
     swapBtn2.addEventListener("click", function (event){
-        let randomPics = [`CSS/img/stock1.jpeg`, `CSS/img/stock3.jpeg`, `CSS/img/stock2.jpeg`];
+        let randomPics = [`${pic1.src}`, `${pic3.src}`];
         pic2.src = randomPics[Math.floor(Math.random() * randomPics.length)]
     })
 
