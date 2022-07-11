@@ -9,10 +9,35 @@
         let todoList = document.getElementById(`my-todos`);
         let addBtn = document.getElementById(`add-todo`);
         addBtn.addEventListener('click', addTodo)
+            var randomBgColor;
+
+            var bgColorArray = [
+                "forestgreen",
+                "cadetblue",
+                "indianred",
+                "aqua",
+                "aquamarine",
+                "Azure",
+                "chartreuse",
+                "ghostwhite",
+                "khaki",
+                "steelblue"
+            ];
+
+
+            function cardBg () {
+                randomBgColor = bgColorArray[Math.floor(Math.random()*bgColorArray.length)];
+                console.log(randomBgColor);
+            }
+            cardBg();
 
             function addTodo() {
                 let todoText = document.getElementById(`add-todo-text`).value;
-                todoList.innerHTML += `<div class="card col-2">
+                function cardBg () {
+                    var randomBgColor = bgColorArray[Math.floor(Math.random()*bgColorArray.length)];
+                    console.log(randomBgColor);
+                }
+                todoList.innerHTML += `<div class="card col-2" style="background-color: ${bgColorArray[Math.floor(Math.random()*bgColorArray.length)]}">
                                             <div class="card-body">
                                             ${todoText}
                                              </div>
