@@ -1,0 +1,24 @@
+/* Incomplete - Javascript I - AJAX & JS Fetch APIs - Store Exercise */
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+#updateInventory {
+    width: 50%;
+    align-self: center;
+    margin-top: 1em;
+}
+th {
+    border-right: groove #a9abad 2px;
+    color: #010418;
+    background-color: bisque;
+}
+#insertProducts {
+    color: rgb(83, 148, 234);
+    border: groove black 2px;
+    background-color: rgba(220, 212, 171, 0.69);
+}
+td {
+    border-right: groove #a9abad 2px;
+    border-bottom: groove black 3px;
+}
