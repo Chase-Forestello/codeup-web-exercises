@@ -12,6 +12,7 @@ th {
     border-right: groove #a9abad 2px;
     color: #010418;
     background-color: bisque;
+    text-align: center;
 }
 #insertProducts {
     color: rgb(83, 148, 234);
@@ -21,4 +22,5 @@ th {
 td {
     border-right: groove #a9abad 2px;
     border-bottom: groove black 3px;
+    text-align: center;
 }
