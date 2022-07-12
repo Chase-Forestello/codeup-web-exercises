@@ -70,30 +70,30 @@
 
 
 
-        // let editBtn = document.getElementsByClassName(`edit-todo`)
-        // console.log(editBtn);{
-        //     editBtn[0].addEventListener('click', editThis )
-        // }
-        // function editThis (event) {
-        //     let editThis = event.target.parentElement.previousElementSibling;
-        //     let cardFooter = event.target.parentElement;
-        //     console.log(editThis);
-        //     editBtn[0].outerHTML = '<div id="editTemp" style="width: 8em"><label for="editBox">Edit:</label>\n' +
-        //         '  <input type="text" id="editBox" name="editBox" style="width: 100%"><br><br>\n' +
-        //         '  <input id="editSubmit" type="submit" value="Submit" style="width: 100%"></div>';
-        //     let editValue = document.getElementById(`editBox`)
-        //     console.log(editValue);
-        //     let editValueSubmit = document.getElementById(`editSubmit`);
-        //     editValueSubmit.addEventListener("click", function(event){
-        //         let todoEdit = document.getElementById(`editBox`).value;
-        //         console.log(todoEdit);
-        //         editThis.innerHTML = editValue.value;
-        //         let editTempDiv = document.getElementById(`editTemp`);
-        //         editTempDiv.outerHTML = `<button class="edit-todo" style="width: 100%">Edit Todo</button>`
-        //
-        //     })
-        //
-        //
-        // }
+        let editBtn = document.getElementsByClassName(`edit-todo`)
+        console.log(editBtn);{
+            editBtn[0].addEventListener('click', editThis )
+        }
+        function editThis (event) {
+            let editThis = event.target.parentElement.previousElementSibling;
+            let cardFooter = event.target.parentElement;
+            console.log(editThis);
+            editBtn[0].outerHTML = '<div id="editTemp" style="width: 8em"><label for="editBox">Edit:</label>\n' +
+                '  <input type="text" id="editBox" name="editBox" style="width: 100%"><br><br>\n' +
+                '  <input id="editSubmit" type="submit" value="Submit" style="width: 100%"></div>';
+            let editValue = document.getElementById(`editBox`)
+            console.log(editValue);
+            let editValueSubmit = document.getElementById(`editSubmit`);
+            editValueSubmit.addEventListener("click", function(event){
+                let todoEdit = document.getElementById(`editBox`).value;
+                console.log(todoEdit);
+                editThis.innerHTML = editValue.value;
+                let editTempDiv = document.getElementById(`editTemp`);
+                editTempDiv.outerHTML = `<button class="edit-todo" style="width: 100%">Edit Todo</button>`
+
+            })
+
+
+        }
     });
 })();
