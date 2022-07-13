@@ -1,4 +1,5 @@
 // Complete - Javascript I - AJAX & JS Fetch APIs - Blog Exercise
+// Dom content loaded function?
 (async function () {
     "use strict";
     const blogPosts = await fetch("js/data/blog.json")
