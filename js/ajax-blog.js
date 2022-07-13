@@ -32,6 +32,16 @@
                     </div>
                 </div>`;
     }
+
+    let newPostContent = document.getElementById(`newPostContent`).value;
+    let
+
+
+
+
+
+
+    // Konami code
     let konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
     let current = 0;
     document.addEventListener("keyup", function (event) {
@@ -58,9 +68,6 @@
             }
         }
     });
-
-
-    // Konami code
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
     var circles = [];

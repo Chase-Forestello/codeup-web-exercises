@@ -13,30 +13,48 @@
 
     </head>
     <body>
-    <div id="wrapper">
-        <canvas id="canvas"></canvas>
-        <div id="hideBlog">
-        <nav class="navbar">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="https://codeup.com/" target="_blank">
-                        <i class="fa-brands fa-hive"> CFB</i>
-                    </a>
-                    <h1 class="animate__animated animate__tada">Chase's Blog</h1>
+        <div id="wrapper">
+            <canvas id="canvas"></canvas>
+            <div id="hideBlog">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="https://codeup.com/" target="_blank">
+                            <i class="fa-brands fa-hive"> CFB</i>
+                        </a>
+                        <h1 class="animate__animated animate__tada">Chase's Blog</h1>
+                    </div>
+                </nav>
+                <div id="postRow" class="row mt-3 w-100">
                 </div>
-            </nav>
-            <div id="postRow" class="row mt-3 w-100">
+                <div id="newPostRow" class="row w-100">
+                    <div class="col-10">
+                        <div id="posts" class="card mt-3 text-center">
+                            <div class="card-header">
+                                <span>New Post</span>
+                            </div>
+                            <div class="card-body">
+                                <label for="newPostContent">Enter a new blog post</label>
+                                <textarea id="newPostContent" rows="5" cols="40"></textarea>
+                                <hr>
+                                <label for="newPostTopics" style="float: left;">Topics:<input id="newPostTopics" placeholder="topic, topic, topic" type="text"></label>
+                                <button type="button" class="btn btn-primary">Add Post</button>
+                                <label for="newPostDate" style="float: right;">Date:<input id="newPostDate" placeholder="Month Day, Year" type="text"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="mt-4">
+                    <p class="by text-center mb-0">
+                        By: <a class="byAnchor" href="https://github.com/Chase-Forestello" target="_blank">Chase Forestello
+                        <i class="fa-brands fa-github"></i></a>
+                    </p>
+                </footer>
             </div>
-            <script src="js/ajax-blog.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-                    crossorigin="anonymous">
-            </script>
         </div>
-    </div>
-    <footer class="mt-4">
-        <p class="by text-center mb-0">
-            By: <a class="byAnchor" href="https://github.com/Chase-Forestello" target="_blank">Chase Forestello <i class="fa-brands fa-github"></i></a>
-        </p>
-    </footer>
+        <script src="js/ajax-blog.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous">
+        </script>
     </body>
 </html>

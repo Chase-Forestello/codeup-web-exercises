@@ -31,4 +31,16 @@ body {
 }
 footer {
     background-color: #86bbea;
+    width: initial;
 }
+#newPostRow {
+    justify-content: center;
+}
+.by{
+    width: 100%;
+}
+textarea {
+    width: 100%;
+}
+
+
