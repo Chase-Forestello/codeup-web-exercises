@@ -34,7 +34,7 @@
     }
 
     let newPostContent = document.getElementById(`newPostContent`).value;
-    let
+    console.log(newPostContent);
 
 
 
