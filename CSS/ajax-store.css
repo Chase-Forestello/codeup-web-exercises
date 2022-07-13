@@ -1,4 +1,4 @@
-/* Incomplete - Javascript I - AJAX & JS Fetch APIs - Store Exercise */
+/* Complete - Javascript I - AJAX & JS Fetch APIs - Store Exercise */
 #wrapper {
     display: flex;
     flex-direction: column;
@@ -9,18 +9,18 @@
     margin-top: 1em;
 }
 th {
-    border-right: groove #a9abad 2px;
+    border: groove #a9abad 2px;
+    border-top: solid black 2px;
     color: #010418;
-    background-color: bisque;
+    background-color: #83c41b!important;
     text-align: center;
 }
 #insertProducts {
     color: rgb(83, 148, 234);
     border: groove black 2px;
-    background-color: rgba(220, 212, 171, 0.69);
+    background-color: rgba(220, 212, 171, 0.69)!important;
 }
 td {
-    border-right: groove #a9abad 2px;
-    border-bottom: groove black 3px;
     text-align: center;
+    border-right: solid black 1px;
 }

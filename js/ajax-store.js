@@ -1,4 +1,4 @@
-// Incomplete - Javascript I - AJAX & JS Fetch APIs - Store Exercise
+// Complete - Javascript I - AJAX & JS Fetch APIs
 // TODO: Create an AJAX GET request for the file under data/inventory.json
 
 // TODO: Take the data from inventory.json and append it to the products table
@@ -25,12 +25,12 @@
     for (let i = 0; i < tools.length; i++) {
 
         var toolTable = tBody.innerHTML +=
-                        `<tr>
+                        `
             <td>${tools[i].title}</td>
             <td>${tools[i].quantity}</td>
             <td>${tools[i].price}</td>
             <td>${tools[i].categories}</td>
-                        <tr>`
+                        `
     }
     let updateBtn = document.getElementById(`updateInventory`);
     updateBtn.addEventListener("click", function (event) {
