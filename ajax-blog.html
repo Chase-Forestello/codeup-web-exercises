@@ -2,22 +2,41 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>AJAX Blog</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="CSS/ajax-blog.css">
         <script src="https://kit.fontawesome.com/26f09e8c8b.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
-        <div id="wrapper">
-            <div id="posts"></div>
+    <div id="wrapper">
+        <canvas id="canvas"></canvas>
+        <div id="hideBlog">
+        <nav class="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="https://codeup.com/" target="_blank">
+                        <i class="fa-brands fa-hive"> CFB</i>
+                    </a>
+                    <h1 class="animate__animated animate__tada">Chase's Blog</h1>
+                </div>
+            </nav>
+            <div id="postRow" class="row mt-3 w-100">
+            </div>
             <script src="js/ajax-blog.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
                     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
                     crossorigin="anonymous">
             </script>
         </div>
+    </div>
+    <footer class="mt-4">
+        <p class="by text-center mb-0">
+            By: <a class="byAnchor" href="https://github.com/Chase-Forestello" target="_blank">Chase Forestello <i class="fa-brands fa-github"></i></a>
+        </p>
+    </footer>
     </body>
 </html>

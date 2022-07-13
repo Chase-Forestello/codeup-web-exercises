@@ -1,1 +1,34 @@
 /* Incomplete - Javascript I - AJAX & JS Fetch APIs - Blog Exercise */
+body {
+    background-image: url("img/blogbackground.jpeg");
+    background-size: cover;
+}
+#posts {
+    margin-left: 1em;
+}
+#postRow {
+    justify-content: center;
+    margin-bottom: 1em;
+}
+#categories {
+    font-size: 10px;
+    float: left;
+}
+#date {
+    font-size: 12px;
+    float: right;
+}
+.card-header {
+    background-color: #86bbea;
+    color: #0D6DFD;
+    font-weight: bold;
+}
+.navbar {
+    background-color: #86bbea;
+}
+#canvas {
+    display: none;
+}
+footer {
+    background-color: #86bbea;
+}
