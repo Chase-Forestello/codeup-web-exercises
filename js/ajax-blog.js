@@ -1,4 +1,4 @@
-// Incomplete - Javascript I - AJAX & JS Fetch APIs - Blog Exercise
+// Complete - Javascript I - AJAX & JS Fetch APIs - Blog Exercise
 (async function () {
     "use strict";
     const blogPosts = await fetch("js/data/blog.json")
