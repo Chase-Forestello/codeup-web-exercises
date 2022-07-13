@@ -1,4 +1,4 @@
-// Complete - Javascript I - AJAX & JS Fetch APIs
+// Complete - Javascript I - AJAX & JS Fetch APIs - Store Exercise
 // TODO: Create an AJAX GET request for the file under data/inventory.json
 
 // TODO: Take the data from inventory.json and append it to the products table
