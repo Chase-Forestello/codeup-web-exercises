@@ -11,7 +11,7 @@
     .then(async function(response){
         if (response.status !== 200){
             console.log("Cannot read tools file");
-            return "";
+            return [];
         } else
             return await response.json();
     });
@@ -25,12 +25,12 @@
     for (let i = 0; i < tools.length; i++) {
 
         var toolTable = tBody.innerHTML +=
-                        `
+                        `<tr>
             <td>${tools[i].title}</td>
             <td>${tools[i].quantity}</td>
             <td>${tools[i].price}</td>
             <td>${tools[i].categories}</td>
-                        `
+                        </tr>`
     }
     let updateBtn = document.getElementById(`updateInventory`);
     updateBtn.addEventListener("click", function (event) {
