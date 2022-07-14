@@ -33,8 +33,13 @@
                 </div>`;
     }
 
-    let newPostContent = document.getElementById(`newPostContent`).value;
-    console.log(newPostContent);
+    let newPostContent = document.getElementById(`newPostContent`);
+    let addPostBtn = document.getElementById(`addPost`);
+    let newPostTopic = document.getElementById(`newPostTopics`);
+    let newPostDate = document.getElementById(`newPostDate`);
+    addPostBtn.addEventListener("click", function(event){
+        console.log(newPostContent.value, newPostTopic.value, newPostDate.value);
+    })
 
 
 
@@ -47,8 +52,6 @@
     document.addEventListener("keyup", function (event) {
         if (konamiCode.indexOf(event.key) < 0 || event.key !== konamiCode[current]) {
             current = -1;
-            console.log(event.key);
-            console.log(current);
         }
         current++;
         if (current === 10) {
