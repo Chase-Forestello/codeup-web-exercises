@@ -1,3 +1,4 @@
+/* Incomplete - Javascript I - AJAX & JS Fetch APIs - Mapbox Exercise */
 #wrapper {
     display: flex;
     flex-direction: column;
@@ -37,5 +38,5 @@ body {
     top: 5px;
 }
 svg {
-
+    display: none;
 }
