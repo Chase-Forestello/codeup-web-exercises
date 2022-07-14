@@ -1,0 +1,24 @@
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mapTools {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+#removeMarkersBtn {
+    margin-left: 3em;
+}
+.hideMarkers {
+    display: none;
+}
+body {
+    background-color: bisque;
+}
+.mapboxgl-canvas-container {
+
+    height: 100vh;
+
+}
