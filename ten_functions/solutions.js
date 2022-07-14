@@ -1,3 +1,4 @@
+// Complete - JavaScript I - Loops - Exercise
 "use strict";
 
 /**
@@ -41,7 +42,7 @@ function isIdentical(userInput, userinput) {
     return userInput === userinput;
 }
 function isEqual(userInput, userinput) {
-    return userInput == userinput;
+    return userInput === userinput;
 }
 function or(userInput, userinput) {
     return userInput || userinput;

@@ -1,4 +1,5 @@
 // Complete - JavaScript I - Loops - Exercise
+
 (function () {
     "use strict";
 
