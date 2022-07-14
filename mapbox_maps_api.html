@@ -20,11 +20,11 @@
             <div id="mapTools" class="row">
                 <div class="col">
                     <label for="zoomIn">Zoom In</label>
-                    <button id="zoomIn" type="button">+</button>
+                    <button id="zoomIn" title="Zoom In" type="button">+</button>
                 </div>
                 <div class="col">
                     <label for="zoomOut">Zoom Out</label>
-                    <button id="zoomOut" type="button">-</button>
+                    <button id="zoomOut" title="Zoom Out" type="button">-</button>
                 </div>
                 <div class="col">
                     <label for="zoomSelect">Zoom level</label>
@@ -34,12 +34,13 @@
                         <option value="20">Zoom level 20</option>
                     </select>
                 </div>
-                <div class="col">
-                    <button id="searchBtn" type="submit">Search</button>
+                <div id="search" class="col">
+                    <button id="searchBtn" title="Search" type="submit">Search</button>
                     <label for="searchInput"><input id="searchInput" type="search" placeholder="City, Place, ... "></label>
                 </div>
                 <div class="col-2">
-                    <button id="removeMarkersBtn" type="button">Remove Markers</button>
+                    <button id="removeMarkersBtn" title="Remove Markers" type="button">Remove Markers</button>
+                    <label for="removeMarkersBtn"></label>
                 </div>
             </div>
             <script src="js/keys.js"></script>

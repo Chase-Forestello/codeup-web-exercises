@@ -19,6 +19,8 @@
             'space-color': 'rgb(11, 11, 25)', // Background color
             'star-intensity': 0.6 // Background star brightness (default 0.35 at low zoooms )}); // Set the default atmosphere style
         })
+        map.addControl(new mapboxgl.GeolocateControl());
+
     });
 
     // Function to geocode addresses with fetch to mapbox.
@@ -35,7 +37,7 @@
     }
 
     // Array holding restaurants objects with various infomation.
-    const favRestaurants3 = [
+    const favRestaurants = [
         {
             name: 'Whataburger',
             coords: [-98.464399, 29.51598],
@@ -60,7 +62,9 @@
 
     // ForEach that pulls info from favRestaurants3 array and creates
     // markers with popups for each.
-    favRestaurants3.forEach(function (restaurant) {
+    favRestaurants.forEach(function (restaurant) {
+        const el = document.createElement(`div`);
+        el.className = `marker`;
         let favsMarker = new mapboxgl.Marker();
         favsMarker.setLngLat(restaurant.coords);
         favsMarker.addTo(map);
@@ -131,10 +135,4 @@
         userSearchLocation.addTo(map);
         currentMarkers.push(userSearchLocation);
     })
-    function onMapLoaded(event) {
-
-        event.map.resize();
-
-    }
-    onMapLoaded();
 })();
