@@ -1,0 +1,42 @@
+/* Incomplete - Javascript I - AJAX & JS Fetch APIs - Weather Map Mapbox Exercise */
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mapTools {
+    display: flex;
+    align-items: flex-start;
+}
+#removeMarkersBtn {
+}
+.hideMarkers {
+    display: none;
+}
+body {
+    background-color: #51c6ea;
+}
+.mapboxgl-canvas-container {
+    height: 100vh;
+}
+.mapboxgl-popup-content {
+    text-align: center;
+}
+#search {
+    display: inline-flex;
+}
+.mapboxgl-marker {
+    background-image: url('img/753718.png');
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.mapboxgl-marker:hover {
+    position: absolute;
+    top: 5px;
+}
+svg {
+    display: none;
+}
