@@ -1,6 +1,7 @@
 // Incomplete - Javascript I - AJAX & JS Fetch APIs - Weather Map Mapbox Exercise
 (async function () {
     "use strict";
+    var newMarker;
 
     // Mapbox map with various options (see comments).
     mapboxgl.accessToken = MAPBOX_API_KEY;
@@ -36,16 +37,6 @@
             });
     }
 
-    //Marker and popup set on Codeup
-    let codeup = await getLngLatFromAddress("Codeup");
-    console.log(`Codeup coords: ${codeup}`);
-    const codeupMarker = new mapboxgl.Marker();
-    codeupMarker.setLngLat(codeup);
-    codeupMarker.addTo(map);
-    var codeupPopup = new mapboxgl.Popup()
-        .setHTML(`<p>Codeup<br> 600 Navarro Street,<br> San Antonio, TX <hr></p>`)
-    codeupMarker.setPopup(codeupPopup)
-
     // Various zoom options with buttons and select
     let zoomInBtn = document.getElementById(`zoomIn`);
     zoomInBtn.addEventListener("click", function (event) {
@@ -67,22 +58,32 @@
         console.log(zoomSelect.value);
         map.setZoom(zoomSelect.value);
     });
+    const currentMarkers = [];
 
     // Allows user to enter any place or address and have a marker appear on
     // that place.
     // Markers are added to a current marker array for optional removal.
     let searchBtn = document.getElementById(`searchBtn`);
     let searchInput = document.getElementById(`searchInput`);
-    const currentMarkers = [];
     searchBtn.addEventListener('click', async function (event) {
         console.log(searchInput.value);
         let searchCoords = (await getLngLatFromAddress(searchInput.value));
         map.setCenter(searchCoords);
-        let userSearchLocation = new mapboxgl.Marker();
-        userSearchLocation.setLngLat(searchCoords);
-        userSearchLocation.addTo(map);
-        currentMarkers.push(userSearchLocation);
+        newMarker.remove();
+        newMarker = new mapboxgl.Marker({draggable: true});
+        newMarker.setLngLat(searchCoords);
+        newMarker.addTo(map);
+        onDragEnd();
+        newMarker.on('dragend', onDragEnd);
+        currentMarkers.push(newMarker);
     })
+
+    // Variable that grabs coords of current mouse position in case we want to start with no marker
+    //and allow user to
+    // map.on('mousemove', (e) => {
+    //        JSON.stringify(e.lngLat.wrap());
+    //     let mousePosition = (e.lngLat);
+    // });
 
     let removeMarkersBtn = document.getElementById(`removeMarkersBtn`);
     removeMarkersBtn.addEventListener("click", function (event) {
@@ -92,4 +93,40 @@
             }
         }
     })
-})()
+
+
+
+    // OpenWeather API call
+    let queryParams = new URLSearchParams({
+        APPID: OPENWEATHER_API_KEY,
+        lat: 29.426742,
+        lon: -98.489765,
+        units: "imperial"
+    });
+    const url = `https://api.openweathermap.org/data/2.5/onecall?${queryParams}`;
+    console.log(url);
+    fetch(url)
+        .then(function (response){
+            return response.json();
+        }).then(function (data) {
+        console.log(data);
+    })
+
+    const coordinates = document.getElementById('coordinates');
+    newMarker = new mapboxgl.Marker({
+        draggable: true
+    })
+    newMarker.setLngLat([-98.489765, 29.426742])
+    newMarker.addTo(map);
+
+    function onDragEnd() {
+        let lngLat = newMarker.getLngLat();
+        console.log(lngLat);
+        coordinates.style.display = 'block';
+        coordinates.innerHTML = `Longitude: ${lngLat.lng}<br />Latitude: ${lngLat.lat}`;
+    }
+
+    newMarker.on('dragend', onDragEnd);
+
+
+})();
