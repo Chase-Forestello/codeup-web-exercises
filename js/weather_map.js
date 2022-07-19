@@ -1,6 +1,21 @@
 // Incomplete - Javascript I - AJAX & JS Fetch APIs - Weather Map Mapbox Exercise
 (async function () {
     "use strict";
+
+
+
+    function clickEffect(e){
+        let d=document.createElement("div");
+        d.className="clickEffect";
+        d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
+        document.body.appendChild(d);
+        d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
+    }
+    document.addEventListener('click', clickEffect);
+
+
+
+
     var newMarker;
 
     // Mapbox map with various options (see comments).
@@ -9,7 +24,7 @@
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
         center: [-98.489765, 29.426742], // starting position [lng, lat]
-        zoom: 10, // starting zoom
+        zoom: 7, // starting zoom
         projection: 'globe' // display the map as a 3D globe
     });
     map.on('style.load', () => {
@@ -18,11 +33,61 @@
             'high-color': 'rgb(36, 92, 223)', // Upper atmosphere
             'horizon-blend': 0.02, // Atmosphere thickness (default 0.2 at low zooms)
             'space-color': 'rgb(11, 11, 25)', // Background color
-            'star-intensity': 0.6 // Background star brightness (default 0.35 at low zoooms )}); // Set the default atmosphere style
+            'star-intensity': 0.6 // Background star brightness (default 0.35 at low zooms )}); // Set the default atmosphere style
         })
+        map.addControl(new mapboxgl.NavigationControl());
         map.addControl(new mapboxgl.GeolocateControl());
-
+        map.addControl(new mapboxgl.NavigationControl());
+        map.addControl(
+            new MapboxDirections({
+                accessToken: mapboxgl.accessToken
+            }),
+            'top-left'
+        );
     });
+    // OpenWeather API call
+    let queryParams = new URLSearchParams({
+        APPID: OPENWEATHER_API_KEY,
+        lat: 29.426742,
+        lon: -98.489765,
+        units: "imperial"
+    });
+    console.log(queryParams);
+    const url = `https://api.openweathermap.org/data/2.5/onecall?${queryParams}`;
+    console.log(url);
+    fetch(url)
+        .then(function (response) {
+            return response.json();
+        }).then(function (data) {
+        console.log(data);
+        let weatherDataDiv = document.getElementById(`weatherData`);
+        for (let i = 0; i < 5; i++) {
+            weatherDataDiv.innerHTML +=
+                `<div class="card-container col-md-12 col-lg-2">
+    <div class="card card-flip col-md-12 col-lg-2" style="height: 65%">
+        <div class="front card-block">
+            <div class="card-text">
+                <div class="weatherIconAlignment card text-center col-md-12 col-lg-2">
+                    <div class="card-title">
+                        ${new Date(data.daily[i].dt * 1000).toDateString()}
+                    </div>
+                    <hr class="hr">
+                    <img class="weatherIcons" src="http://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png" alt="weather icons">
+                    ${data.daily[i].weather[0].description}
+                    <hr class="hr">
+                    HI: ${data.daily[i].temp.max}&#8457; <br> LO: ${data.daily[i].temp.min}&#8457;
+                </div>
+            </div>
+        </div>
+        <div class="back card-block">
+            <div class="text-center">Humidity: ${data.daily[i].humidity}% <hr class="hrBack"> UV-Index: ${data.daily[i].uvi} <hr class="hrBack"> Feels like: ${data.daily[i].feels_like.day}&#8457</div>
+        </div>
+    </div>
+</div>
+</div>`
+        }
+    });
+    // new Date(dayInfo.dt * 1000).toDateString());
 
     // Function to geocode addresses with fetch to mapbox.
     function getLngLatFromAddress(address, token = MAPBOX_API_KEY) {
@@ -94,24 +159,6 @@
         }
     })
 
-
-
-    // OpenWeather API call
-    let queryParams = new URLSearchParams({
-        APPID: OPENWEATHER_API_KEY,
-        lat: 29.426742,
-        lon: -98.489765,
-        units: "imperial"
-    });
-    const url = `https://api.openweathermap.org/data/2.5/onecall?${queryParams}`;
-    console.log(url);
-    fetch(url)
-        .then(function (response){
-            return response.json();
-        }).then(function (data) {
-        console.log(data);
-    })
-
     const coordinates = document.getElementById('coordinates');
     newMarker = new mapboxgl.Marker({
         draggable: true
@@ -120,13 +167,68 @@
     newMarker.addTo(map);
 
     function onDragEnd() {
-        let lngLat = newMarker.getLngLat();
+        const lngLat = newMarker.getLngLat();
         console.log(lngLat);
         coordinates.style.display = 'block';
         coordinates.innerHTML = `Longitude: ${lngLat.lng}<br />Latitude: ${lngLat.lat}`;
+        map.setCenter(lngLat);
+        // OpenWeather API call
+        let queryParams = new URLSearchParams({
+            APPID: OPENWEATHER_API_KEY,
+            lat: lngLat.lat,
+            lon: lngLat.lng,
+            units: "imperial"
+        });
+        console.log(queryParams);
+        const url = `https://api.openweathermap.org/data/2.5/onecall?${queryParams}`;
+        console.log(url);
+        fetch(url)
+            .then(function (response) {
+                return response.json();
+            }).then(function (data) {
+            console.log(data);
+            let weatherDataDiv = document.getElementById(`weatherData`);
+            weatherDataDiv.innerHTML = ""
+            for (let i = 0; i < 5; i++) {
+                weatherDataDiv.innerHTML += `<div class="card-container col-md-12 col-lg-2">
+    <div class="card card-flip col-md-12 col-lg-2" style="height: 65%">
+        <div class="front card-block">
+            <div class="card-text">
+                <div class="weatherIconAlignment card text-center col-md-12 col-lg-2">
+                    <div class="card-title">
+                        ${new Date(data.daily[i].dt * 1000).toDateString()}
+                    </div>
+                    <hr class="hr">
+                    <img class="weatherIcons" src="http://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png" alt="weather icons">
+                    ${data.daily[i].weather[0].description}
+                    <hr class="hr">
+                    HI: ${data.daily[i].temp.max}&#8457; <br> LO: ${data.daily[i].temp.min}&#8457;
+                </div>
+            </div>
+        </div>
+        <div class="back card-block">
+            <div class="text-center">Humidity: ${data.daily[i].humidity}% <hr class="hrBack"> UV-Index: ${data.daily[i].uvi} <hr class="hrBack"> Feels like: ${data.daily[i].feels_like.day}&#8457</div>
+        </div>
+    </div>
+</div>
+</div>`
+            }
+        });
     }
 
     newMarker.on('dragend', onDragEnd);
+    let table = document.getElementById("map");
+    table.addEventListener("mouseenter", function () {
+        //toggle the body element to turn dark
+        let body = document.getElementById("table");
+        body.classList.toggle("light-box");
+        coordinates.classList.toggle('whiteText');
+    })
+    table.addEventListener("mouseleave", function () {
+        let body = document.getElementById("table");
+        body.classList.toggle("light-box");
+        coordinates.classList.toggle('whiteText');
+    })
 
 
 })();
