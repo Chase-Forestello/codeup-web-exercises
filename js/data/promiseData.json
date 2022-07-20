@@ -1,0 +1,1239 @@
+[
+  {
+    "id": "22986649916",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 496740158,
+      "name": "Chase-Forestello/codeup-web-exercises",
+      "url": "https://api.github.com/repos/Chase-Forestello/codeup-web-exercises"
+    },
+    "payload": {
+      "push_id": 10496563752,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "5f67a46157936770f5e8578236f766aa2015cc3e",
+      "before": "3f4e46a952769aa46bdda1efe1393b02e96fd9a9",
+      "commits": [
+        {
+          "sha": "5f67a46157936770f5e8578236f766aa2015cc3e",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete - JavaScript II - Promises Exercise",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/codeup-web-exercises/commits/5f67a46157936770f5e8578236f766aa2015cc3e"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-20T16:50:19Z"
+  },
+  {
+    "id": "22983301089",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 496740158,
+      "name": "Chase-Forestello/codeup-web-exercises",
+      "url": "https://api.github.com/repos/Chase-Forestello/codeup-web-exercises"
+    },
+    "payload": {
+      "push_id": 10494996691,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "3f4e46a952769aa46bdda1efe1393b02e96fd9a9",
+      "before": "63a88a052c1d30e9654ae76f2c653ea7ef61bd95",
+      "commits": [
+        {
+          "sha": "3f4e46a952769aa46bdda1efe1393b02e96fd9a9",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete - JavaScript II - Promises Exercise",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/codeup-web-exercises/commits/3f4e46a952769aa46bdda1efe1393b02e96fd9a9"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-20T14:26:21Z"
+  },
+  {
+    "id": "22966675384",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 510167056,
+      "name": "Chase-Forestello/live-site",
+      "url": "https://api.github.com/repos/Chase-Forestello/live-site"
+    },
+    "payload": {
+      "push_id": 10486747992,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "cbd149c1ebd34c5659c900bcc5006561710ea4c7",
+      "before": "758f02695596de03f7c24a7e4d79d45a3e5e70be",
+      "commits": [
+        {
+          "sha": "cbd149c1ebd34c5659c900bcc5006561710ea4c7",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "live site",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/live-site/commits/cbd149c1ebd34c5659c900bcc5006561710ea4c7"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-19T20:38:43Z"
+  },
+  {
+    "id": "22966636331",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "push_id": 10486728143,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "82c8f3ad63b5f841acea90513ad160d1b687c91f",
+      "before": "a6b9d198bccdbd140dce5ec797399f183ee53fdd",
+      "commits": [
+        {
+          "sha": "82c8f3ad63b5f841acea90513ad160d1b687c91f",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Complete",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/82c8f3ad63b5f841acea90513ad160d1b687c91f"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-19T20:36:13Z"
+  },
+  {
+    "id": "22966628339",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "push_id": 10486724092,
+      "size": 6,
+      "distinct_size": 6,
+      "ref": "refs/heads/main",
+      "head": "a6b9d198bccdbd140dce5ec797399f183ee53fdd",
+      "before": "8f0624f9a45c072553a41bfd2300ce648398dfb5",
+      "commits": [
+        {
+          "sha": "0e8df591adb2c6aebbfe00fee21f12d6524f54b7",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete - adding features",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/0e8df591adb2c6aebbfe00fee21f12d6524f54b7"
+        },
+        {
+          "sha": "67ebf4d7f41e1529c1dd70b7cbe28f1de1745d36",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Merge branch 'main' of github.com:Chase-Forestello/ryan-chase-weathermap",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/67ebf4d7f41e1529c1dd70b7cbe28f1de1745d36"
+        },
+        {
+          "sha": "26e5600aa8e811397859e252215ac4b50592cb0a",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Merge branch 'main' of github.com:Chase-Forestello/ryan-chase-weathermap\n\n# Conflicts:\n#\tweather_map.css",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/26e5600aa8e811397859e252215ac4b50592cb0a"
+        },
+        {
+          "sha": "d92f110c380902ee1eea2bde4f558ce3da52e3f8",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/d92f110c380902ee1eea2bde4f558ce3da52e3f8"
+        },
+        {
+          "sha": "e5f57d5d12e4df904146f261a9b2f89635617c61",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Merge branch 'main' of github.com:Chase-Forestello/ryan-chase-weathermap\n\n# Conflicts:\n#\tweather_map.js",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/e5f57d5d12e4df904146f261a9b2f89635617c61"
+        },
+        {
+          "sha": "a6b9d198bccdbd140dce5ec797399f183ee53fdd",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Merge branch 'main' of github.com:Chase-Forestello/ryan-chase-weathermap",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/a6b9d198bccdbd140dce5ec797399f183ee53fdd"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-19T20:35:41Z"
+  },
+  {
+    "id": "22966620442",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 510167056,
+      "name": "Chase-Forestello/live-site",
+      "url": "https://api.github.com/repos/Chase-Forestello/live-site"
+    },
+    "payload": {
+      "push_id": 10486720175,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "758f02695596de03f7c24a7e4d79d45a3e5e70be",
+      "before": "53f482468a5a2b3a92646adbab4ad82f21b239d6",
+      "commits": [
+        {
+          "sha": "758f02695596de03f7c24a7e4d79d45a3e5e70be",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "live site",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/live-site/commits/758f02695596de03f7c24a7e4d79d45a3e5e70be"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-19T20:35:11Z"
+  },
+  {
+    "id": "22966543819",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 510167056,
+      "name": "Chase-Forestello/live-site",
+      "url": "https://api.github.com/repos/Chase-Forestello/live-site"
+    },
+    "payload": {
+      "push_id": 10486681835,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "53f482468a5a2b3a92646adbab4ad82f21b239d6",
+      "before": "24874720e41b5e8e027dd02dd5de3b9ad9bb0b59",
+      "commits": [
+        {
+          "sha": "53f482468a5a2b3a92646adbab4ad82f21b239d6",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "live site",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/live-site/commits/53f482468a5a2b3a92646adbab4ad82f21b239d6"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-19T20:30:15Z"
+  },
+  {
+    "id": "22961950859",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 510167056,
+      "name": "Chase-Forestello/live-site",
+      "url": "https://api.github.com/repos/Chase-Forestello/live-site"
+    },
+    "payload": {
+      "push_id": 10484417229,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "24874720e41b5e8e027dd02dd5de3b9ad9bb0b59",
+      "before": "ed0be883359fff71633c69d202cbe2a3771299f4",
+      "commits": [
+        {
+          "sha": "24874720e41b5e8e027dd02dd5de3b9ad9bb0b59",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Weathermap Project",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/live-site/commits/24874720e41b5e8e027dd02dd5de3b9ad9bb0b59"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-19T16:04:24Z"
+  },
+  {
+    "id": "22961897021",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 496740158,
+      "name": "Chase-Forestello/codeup-web-exercises",
+      "url": "https://api.github.com/repos/Chase-Forestello/codeup-web-exercises"
+    },
+    "payload": {
+      "push_id": 10484391663,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "63a88a052c1d30e9654ae76f2c653ea7ef61bd95",
+      "before": "2e093389709a3fc95f0c609f7cb22e62e52b7817",
+      "commits": [
+        {
+          "sha": "63a88a052c1d30e9654ae76f2c653ea7ef61bd95",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete - adding features",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/codeup-web-exercises/commits/63a88a052c1d30e9654ae76f2c653ea7ef61bd95"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-19T16:01:46Z"
+  },
+  {
+    "id": "22961004516",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "push_id": 10483969574,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "4e2062f3d26339235a1399cbe924fab63ce9008a",
+      "before": "55678923d845b063c97efe87644dc1b075079e2f",
+      "commits": [
+        {
+          "sha": "4e2062f3d26339235a1399cbe924fab63ce9008a",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete - working on features",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/4e2062f3d26339235a1399cbe924fab63ce9008a"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-19T15:22:06Z"
+  },
+  {
+    "id": "22960055981",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "push_id": 10483516461,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "55678923d845b063c97efe87644dc1b075079e2f",
+      "before": "a4be0b4ba3e8d48138f2ceeae1bf24f55863d923",
+      "commits": [
+        {
+          "sha": "55678923d845b063c97efe87644dc1b075079e2f",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete - adding background images and more functionality",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/55678923d845b063c97efe87644dc1b075079e2f"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-19T14:41:59Z"
+  },
+  {
+    "id": "22943303529",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "push_id": 10475175980,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "31063415dcbd7d345ef569797baeade89041f2c3",
+      "before": "40107e493b272874ded47012daea862366eb1618",
+      "commits": [
+        {
+          "sha": "31063415dcbd7d345ef569797baeade89041f2c3",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/31063415dcbd7d345ef569797baeade89041f2c3"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-18T20:44:02Z"
+  },
+  {
+    "id": "22943146877",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "push_id": 10475104553,
+      "size": 3,
+      "distinct_size": 3,
+      "ref": "refs/heads/main",
+      "head": "40107e493b272874ded47012daea862366eb1618",
+      "before": "ccb5d0b50d4c96fb7147797e8686e5dc3cc6ef6b",
+      "commits": [
+        {
+          "sha": "d61996d8eaf074153d6af8e6807a943178c8630c",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete - styling",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/d61996d8eaf074153d6af8e6807a943178c8630c"
+        },
+        {
+          "sha": "8f9710b03cae843701dc8ad3e6b6f19e08001acb",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Merge branch 'main' of github.com:Chase-Forestello/ryan-chase-weathermap\n\n# Conflicts:\n#\tweather_map.js",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/8f9710b03cae843701dc8ad3e6b6f19e08001acb"
+        },
+        {
+          "sha": "40107e493b272874ded47012daea862366eb1618",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "merge conflicts for dayz",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/40107e493b272874ded47012daea862366eb1618"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-18T20:36:00Z"
+  },
+  {
+    "id": "22942234884",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "push_id": 10474679176,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "a3b2bcfb3c3874c57f5a8952680756233b8b357a",
+      "before": "78bef05a15a5ee67d6e432a5bea4738c1a25315a",
+      "commits": [
+        {
+          "sha": "a3b2bcfb3c3874c57f5a8952680756233b8b357a",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete - working on styling",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/a3b2bcfb3c3874c57f5a8952680756233b8b357a"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-18T19:48:30Z"
+  },
+  {
+    "id": "22942220647",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "push_id": 10474672264,
+      "size": 2,
+      "distinct_size": 2,
+      "ref": "refs/heads/main",
+      "head": "78bef05a15a5ee67d6e432a5bea4738c1a25315a",
+      "before": "6753f9b66b2ece1ec6d2b2c5d6f223a97becc27c",
+      "commits": [
+        {
+          "sha": "f64619b99926ec4c52a44199b6476e8512bd665e",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete - working on styling",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/f64619b99926ec4c52a44199b6476e8512bd665e"
+        },
+        {
+          "sha": "78bef05a15a5ee67d6e432a5bea4738c1a25315a",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Merge branch 'main' of github.com:Chase-Forestello/ryan-chase-weathermap",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/78bef05a15a5ee67d6e432a5bea4738c1a25315a"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-18T19:47:39Z"
+  },
+  {
+    "id": "22939830874",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "push_id": 10473574782,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "0def376c226c19b45fbe4b19962cf261327d1197",
+      "before": "4ee1b696b907744f12b9fa47f0d3e2af38db847c",
+      "commits": [
+        {
+          "sha": "0def376c226c19b45fbe4b19962cf261327d1197",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "incomplete",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/0def376c226c19b45fbe4b19962cf261327d1197"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-18T17:38:03Z"
+  },
+  {
+    "id": "22939806787",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "push_id": 10473563329,
+      "size": 2,
+      "distinct_size": 2,
+      "ref": "refs/heads/main",
+      "head": "4ee1b696b907744f12b9fa47f0d3e2af38db847c",
+      "before": "24daa65ef7dfd9d0a9cb417157908c3f730675fe",
+      "commits": [
+        {
+          "sha": "c3f311e2f494c82eb161c1e88747a772e9ee43e4",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "incomplete",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/c3f311e2f494c82eb161c1e88747a772e9ee43e4"
+        },
+        {
+          "sha": "4ee1b696b907744f12b9fa47f0d3e2af38db847c",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Merge branch 'main' of github.com:Chase-Forestello/ryan-chase-weathermap\n\n# Conflicts:\n#\tweather_map.html\n#\tweather_map.js",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/4ee1b696b907744f12b9fa47f0d3e2af38db847c"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-18T17:36:41Z"
+  },
+  {
+    "id": "22938791229",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "push_id": 10473084314,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "f140ced2c3006a123f0a40333d21bd7743274ccc",
+      "before": "0ebbf2b21bd6c2ec57046ab085c7de22f97814a6",
+      "commits": [
+        {
+          "sha": "f140ced2c3006a123f0a40333d21bd7743274ccc",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete - working on adding cards",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/f140ced2c3006a123f0a40333d21bd7743274ccc"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-18T16:43:28Z"
+  },
+  {
+    "id": "22938755974",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "push_id": 10473067309,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "0ebbf2b21bd6c2ec57046ab085c7de22f97814a6",
+      "before": "c92ba3952b8817cb721f5dce49ac4f71836f92ef",
+      "commits": [
+        {
+          "sha": "0ebbf2b21bd6c2ec57046ab085c7de22f97814a6",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete - working on adding cards",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/0ebbf2b21bd6c2ec57046ab085c7de22f97814a6"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-18T16:41:30Z"
+  },
+  {
+    "id": "22938127341",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "push_id": 10472768018,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "958fc25f0bcd0616a24af051dbcc6942f74912e4",
+      "before": "056fdc398ea76bdae52635d33d4aaa2f2553b1a3",
+      "commits": [
+        {
+          "sha": "958fc25f0bcd0616a24af051dbcc6942f74912e4",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete - working on generating cards with data",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/958fc25f0bcd0616a24af051dbcc6942f74912e4"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-18T16:08:58Z"
+  },
+  {
+    "id": "22935995375",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 496740158,
+      "name": "Chase-Forestello/codeup-web-exercises",
+      "url": "https://api.github.com/repos/Chase-Forestello/codeup-web-exercises"
+    },
+    "payload": {
+      "push_id": 10471753397,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "2e093389709a3fc95f0c609f7cb22e62e52b7817",
+      "before": "e93583b08b23774470d41a6ff9c4c460220c5f79",
+      "commits": [
+        {
+          "sha": "2e093389709a3fc95f0c609f7cb22e62e52b7817",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete - Javascript I - AJAX & JS Fetch APIs - Weather Map Mapbox Exercise (Personal Copy)",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/codeup-web-exercises/commits/2e093389709a3fc95f0c609f7cb22e62e52b7817"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-18T14:34:20Z"
+  },
+  {
+    "id": "22907258796",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "push_id": 10454471650,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "056fdc398ea76bdae52635d33d4aaa2f2553b1a3",
+      "before": "b5ee249352e9458acf43c59358392949d0d56907",
+      "commits": [
+        {
+          "sha": "056fdc398ea76bdae52635d33d4aaa2f2553b1a3",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete - working on pulling weather data and generating dom content",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/056fdc398ea76bdae52635d33d4aaa2f2553b1a3"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-15T22:04:13Z"
+  },
+  {
+    "id": "22906340549",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "push_id": 10454026659,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "b5ee249352e9458acf43c59358392949d0d56907",
+      "before": "bab305ab85f0650a0668ce5b434a6221a270a061",
+      "commits": [
+        {
+          "sha": "b5ee249352e9458acf43c59358392949d0d56907",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Working on creating marker onclick and fetching all data for that location",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/b5ee249352e9458acf43c59358392949d0d56907"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-15T20:57:26Z"
+  },
+  {
+    "id": "22905607733",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "push_id": 10453677657,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "bab305ab85f0650a0668ce5b434a6221a270a061",
+      "before": "59524937818b17b0ff177943b4fbe1e119659ba9",
+      "commits": [
+        {
+          "sha": "bab305ab85f0650a0668ce5b434a6221a270a061",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Boiler plate",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/bab305ab85f0650a0668ce5b434a6221a270a061"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-15T20:11:52Z"
+  },
+  {
+    "id": "22905342450",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "push_id": 10453546033,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "51195d6790f46becaf8397312bd893ee2bc2799e",
+      "before": "741dc6d8f5faeb834b89d8a7c04d87b180e95ffa",
+      "commits": [
+        {
+          "sha": "51195d6790f46becaf8397312bd893ee2bc2799e",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "test",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap/commits/51195d6790f46becaf8397312bd893ee2bc2799e"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-15T19:54:00Z"
+  },
+  {
+    "id": "22905325668",
+    "type": "MemberEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "member": {
+        "login": "RSKYoshi",
+        "id": 103463313,
+        "node_id": "U_kgDOBiq5kQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/103463313?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/RSKYoshi",
+        "html_url": "https://github.com/RSKYoshi",
+        "followers_url": "https://api.github.com/users/RSKYoshi/followers",
+        "following_url": "https://api.github.com/users/RSKYoshi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/RSKYoshi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/RSKYoshi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/RSKYoshi/subscriptions",
+        "organizations_url": "https://api.github.com/users/RSKYoshi/orgs",
+        "repos_url": "https://api.github.com/users/RSKYoshi/repos",
+        "events_url": "https://api.github.com/users/RSKYoshi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/RSKYoshi/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "action": "added"
+    },
+    "public": true,
+    "created_at": "2022-07-15T19:52:49Z"
+  },
+  {
+    "id": "22905262989",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "ref": "main",
+      "ref_type": "branch",
+      "master_branch": "main",
+      "description": null,
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2022-07-15T19:48:30Z"
+  },
+  {
+    "id": "22904915215",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 514382040,
+      "name": "Chase-Forestello/ryan-chase-weathermap",
+      "url": "https://api.github.com/repos/Chase-Forestello/ryan-chase-weathermap"
+    },
+    "payload": {
+      "ref": null,
+      "ref_type": "repository",
+      "master_branch": "main",
+      "description": null,
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2022-07-15T19:24:00Z"
+  },
+  {
+    "id": "22904669632",
+    "type": "WatchEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 498856875,
+      "name": "CodeupClassroom/venus-web-exercises",
+      "url": "https://api.github.com/repos/CodeupClassroom/venus-web-exercises"
+    },
+    "payload": {
+      "action": "started"
+    },
+    "public": true,
+    "created_at": "2022-07-15T19:06:34Z",
+    "org": {
+      "id": 23344937,
+      "login": "CodeupClassroom",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/CodeupClassroom",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23344937?"
+    }
+  },
+  {
+    "id": "22903206748",
+    "type": "PushEvent",
+    "actor": {
+      "id": 101914667,
+      "login": "Chase-Forestello",
+      "display_login": "Chase-Forestello",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Chase-Forestello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101914667?"
+    },
+    "repo": {
+      "id": 496740158,
+      "name": "Chase-Forestello/codeup-web-exercises",
+      "url": "https://api.github.com/repos/Chase-Forestello/codeup-web-exercises"
+    },
+    "payload": {
+      "push_id": 10452453798,
+      "size": 2,
+      "distinct_size": 2,
+      "ref": "refs/heads/main",
+      "head": "e93583b08b23774470d41a6ff9c4c460220c5f79",
+      "before": "bf7fb3112a9d38950d29a5c62be17c15fdf45326",
+      "commits": [
+        {
+          "sha": "b961ee4ee7fe7777b16589c3f2ffe0b839ec9712",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete - Javascript I - AJAX & JS Fetch APIs - Mapbox Exercise",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/codeup-web-exercises/commits/b961ee4ee7fe7777b16589c3f2ffe0b839ec9712"
+        },
+        {
+          "sha": "e93583b08b23774470d41a6ff9c4c460220c5f79",
+          "author": {
+            "email": "101914667+Chase-Forestello@users.noreply.github.com",
+            "name": "Chase Forestello"
+          },
+          "message": "Incomplete - Javascript I - AJAX & JS Fetch APIs - Weather Map Mapbox Exercise",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Chase-Forestello/codeup-web-exercises/commits/e93583b08b23774470d41a6ff9c4c460220c5f79"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2022-07-15T17:27:45Z"
+  }
+]
