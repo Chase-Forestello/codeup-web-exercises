@@ -5,13 +5,12 @@
         method: 'GET',
         headers: {
     'Authorization': GITHUB_API_KEY
-
         }
     };
 
 
     function githubUsers(username) {
-        return fetch(`https://api.github.com/users/${username}/events/public`, options)
+        return fetch(`https://api.github.com/users/${username}/events/public/commits`, options)
             .then(function (response) {
                 return response.json();
             }).catch(function (error) {
@@ -30,7 +29,7 @@
     function wait (delay){
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                if (delay > 999 ) {
+                if (delay > 999) {
                     resolve();
                 } else {
                     reject();
