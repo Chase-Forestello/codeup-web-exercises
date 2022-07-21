@@ -1,0 +1,30 @@
+#jalopyImg {
+    display: block;
+    max-width: 300px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#img-button{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
+}
+nav {
+    background-color: whitesmoke;
+    width: 100%;
+}
+.jalopy-nav{
+    text-decoration: none;
+    color:black;
+    text-align: center;
+    margin-right: .2em;
+    margin-left: .2em;
+}
+#main {
+    padding: 0;
+}
+footer {
+    background-color: whitesmoke;
+}
