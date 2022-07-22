@@ -44,7 +44,7 @@ function changeAboutText() {
     document.querySelector("#about-text").innerText = "Hello World!";
 }
 
-export function aboutJSFunction() {
+export function AboutJSFunction() {
     // showNotification("Hey, a message!", "danger");
     document.querySelector("#change-about-text").addEventListener("click", changeAboutText);
 }

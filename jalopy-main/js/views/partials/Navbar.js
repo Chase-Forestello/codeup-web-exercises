@@ -22,6 +22,7 @@ export default function Navbar(props) {
     }
 
     html += `<a class="jalopy-nav" href="/dogs" data-link>Dog Facts</a>`;
+    html += `<a class="jalopy-nav" href="/quotes" data-link>Quotes</a>`;
     html += `</nav>`;
     return html;
 }

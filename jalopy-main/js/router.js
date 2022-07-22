@@ -1,5 +1,5 @@
-import homeHTMLFunction, {homeJSFunction} from "./views/Home.js";
-import aboutHTMLFunction, {aboutJSFunction} from "./views/About.js";
+import HomeHTMLFunction, {HomeJSFunction} from "./views/Home.js";
+import AboutHTMLFunction, {AboutJSFunction} from "./views/About.js";
 import Error404 from "./views/Error404.js";
 import Loading from "./views/Loading.js";
 import Login from "./views/Login.js";
@@ -8,7 +8,8 @@ import Register from "./views/Register.js"
 import {RegisterEvent} from "./views/Register.js";
 import UserIndex, {UserEvents} from "./views/User.js";
 import Logout, {LogoutEvents} from "./views/Logout.js";
-import dogFactsHTMLFunction, {dogFactsJSFunction} from "./views/DogFacts.js";
+import DogFactsHTMLFunction, {DogFactsJSFunction} from "./views/DogFacts.js";
+import QuotesHTMLFunction, {QuotesJSFunction} from "./views/Quotes.js";
 
 /**
  * Returns the route object for a specific route based on the given URI
@@ -18,11 +19,11 @@ import dogFactsHTMLFunction, {dogFactsJSFunction} from "./views/DogFacts.js";
 export default function router(URI) {
     const routes = {
         '/': {
-            returnView: homeHTMLFunction,
+            returnView: HomeHTMLFunction,
             state: {},
             uri: '/',
             title: 'Home',
-            viewEvent: homeJSFunction
+            viewEvent: HomeJSFunction
         },
         '/logout': {
             returnView: Logout,
@@ -53,11 +54,11 @@ export default function router(URI) {
             viewEvent: UserEvents
         },
         '/about': {
-            returnView: aboutHTMLFunction,
+            returnView: AboutHTMLFunction,
             state: {},
             uri: '/about',
             title: 'About',
-            viewEvent: aboutJSFunction
+            viewEvent: AboutJSFunction
         },
         '/error': {
             returnView: Error404,
@@ -72,11 +73,26 @@ export default function router(URI) {
             title: 'Loading...',
         },
         '/dogs': {
-            returnView: dogFactsHTMLFunction,
+            returnView: DogFactsHTMLFunction,
             state: {},
             uri: '/dogs',
             title: 'Dog Facts',
-            viewEvent: dogFactsJSFunction
+            viewEvent: DogFactsJSFunction
+        },
+        '/quotes': {
+            returnView: QuotesHTMLFunction,
+            state: {
+                quotes: {
+                    url: "https://quotes.fulgentcorp.com:12250/v1/quotes?random=true&limit=10",
+                    headers: {
+                        'Accept': 'application/json',
+                        'Authorization': QUOTES_API_KEY
+                    }
+                }
+            },
+            uri: '/quotes',
+            title: 'Quotes',
+            viewEvent: QuotesJSFunction
         }
     };
 

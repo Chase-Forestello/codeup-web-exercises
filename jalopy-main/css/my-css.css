@@ -12,19 +12,52 @@
     margin-bottom: 1em;
 }
 nav {
-    background-color: whitesmoke;
+    background-color: #F5F5F53A;
     width: 100%;
+    height: 2em;
 }
 .jalopy-nav{
     text-decoration: none;
     color:black;
     text-align: center;
-    margin-right: .2em;
-    margin-left: .2em;
+    margin-right: .5em;
+    margin-left: .5em;
 }
 #main {
     padding: 0;
+    background-color: #7b836c;
 }
 footer {
-    background-color: whitesmoke;
+    background-color: #F5F5F53A;
+}
+#dogFactsPage {
+    background-color: #7b836c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dogCards {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
+    background-color: #d8e7bd;
+}
+#show-fact-btn{
+    margin-bottom: 1em;
+    width: auto;
+    background-color: #d8e7bd;
+}
+#QuotesPage {
+    height: 100%;
+    background-color: #7b836c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quoteCards {
+    width: 70%;
+    background-color: #d8e7bd;
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
