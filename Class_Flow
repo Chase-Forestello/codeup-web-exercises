@@ -6,3 +6,41 @@
 -Media Queries, Bootstrap, Design Project (complete)
 -JS BOM & DOM (in progress)
 **grading period 1 ends july**
+
+Flexbox Fundamentals
+	flexbox-fundamentals-exercise.html
+Flexbox Practice 1
+	flex-form.html
+Flexbox Practice 2
+	flexbox-cards.html
+Flexbox Practice 3
+	flexbox-nav-exercise.html
+Bootstrap Intro
+	order-pizza.html
+Browser Object Model
+	defuse-the-bom.html
+Document Object Model
+	 dom-query-js.html
+DOM Events
+	 dom-query-js.html
+Mapbox API
+	mapbox_maps_api.html
+The next 7 exercises from from New/Modified Venus exercises:
+Key events
+	konami.html
+DOM Traversal
+	parks.html
+DOM Adding and Removing elements
+	dom_add_remove.html
+Fetch
+	ajax-store.html
+	ajax-blog.html
+Jalopy: modify a screen
+	TBA
+Jalopy: add a new screen
+	TBA
+Jalopy: fetch data from api
+	TBA
+Jalopy: update date in api
+	TBA (edited)
+
