@@ -5,13 +5,13 @@ import {showNotification} from "../messaging.js";
 export default function AddQuoteHTMLFunction(props) {
     return `
 <form class="container">
-    <h1>New Quote</h1>
+    <h1 id="newQuoteHeader">New Quote</h1>
     <form>
         <label for="quoteText" class="form-label">Quote:</label>
         <input class="form-control" list="datalistOptions" id="quoteText" placeholder="Enter a new quote">
         <label for="quoteTextAuthor" class="form-label">Author:</label>
         <input class="form-control" list="datalistOptions" id="quoteTextAuthor" placeholder="Enter author">
-        <button class="form-control btn insert-btn" id="insert-quote-btn">Insert Author</button>
+        <button class="form-control btn insert-btn" id="insert-quote-btn">Insert Quote</button>
     </form>
 </div>
 `;
@@ -39,7 +39,7 @@ function addQuote() {
     };
 
     if(author.length < 1) {
-        newQuote.author = "anonymous"
+        newQuote.author = "Anonymous"
     }
 
     console.log("Quote is ready to be inserted");
