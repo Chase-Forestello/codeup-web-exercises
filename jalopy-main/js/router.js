@@ -10,6 +10,8 @@ import UserIndex, {UserEvents} from "./views/User.js";
 import Logout, {LogoutEvents} from "./views/Logout.js";
 import DogFactsHTMLFunction, {DogFactsJSFunction} from "./views/DogFacts.js";
 import QuotesHTMLFunction, {QuotesJSFunction} from "./views/Quotes.js";
+import AddDogFactHTMLFunction, {AddDogFactJSFunction} from "./views/AddDogFact.js";
+import AddQuoteHTMLFunction, {AddQuoteJSFunction} from "./views/AddQuote.js";
 
 /**
  * Returns the route object for a specific route based on the given URI
@@ -74,7 +76,15 @@ export default function router(URI) {
         },
         '/dogs': {
             returnView: DogFactsHTMLFunction,
-            state: {},
+            state: {
+                dogFacts: {
+                    url: "https://dogfacts.fulgentcorp.com:12250/v1/facts?random=false&limit=30",
+                    headers: {
+                        'Accept': 'application/json',
+                        'Authorization': JALOPY_API_KEY
+                    }
+                }
+            },
             uri: '/dogs',
             title: 'Dog Facts',
             viewEvent: DogFactsJSFunction
@@ -83,16 +93,30 @@ export default function router(URI) {
             returnView: QuotesHTMLFunction,
             state: {
                 quotes: {
-                    url: "https://quotes.fulgentcorp.com:12250/v1/quotes?random=true&limit=10",
+                    url: "https://quotes.fulgentcorp.com:12250/v1/quotes?random=false&limit=30",
                     headers: {
                         'Accept': 'application/json',
-                        'Authorization': QUOTES_API_KEY
+                        'Authorization': JALOPY_API_KEY
                     }
                 }
             },
             uri: '/quotes',
             title: 'Quotes',
             viewEvent: QuotesJSFunction
+        },
+        '/insert-dog-fact': {
+            returnView: AddDogFactHTMLFunction,
+            state: {},
+            uri: '/insert-dog-fact',
+            title: 'Insert Dog Fact',
+            viewEvent: AddDogFactJSFunction
+        },
+        '/insert-quote': {
+            returnView: AddQuoteHTMLFunction,
+            state: {},
+            uri: '/insert-quote',
+            title: 'Insert Quote',
+            viewEvent: AddQuoteJSFunction
         }
     };
 
