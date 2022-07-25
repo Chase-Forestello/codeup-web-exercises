@@ -1,3 +1,4 @@
+// Complete - Jalopy - Adding a Jalopy Screen
 export default function DogFactsHTMLFunction(props) {
     return `
 <div id="dogFactsPage">
