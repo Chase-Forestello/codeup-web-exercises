@@ -29,7 +29,7 @@ function makeDogFactCards(dogFacts) {
 // using the dog fact that is passed in as a parameter
 function makeDogFactCard(dogFact) {
     return `
-<div class="card">
+<div class="card dogCards">
     <div class="card-body">
         <p class="dog-fact" style="visibility: hidden">${dogFact}</p>
     </div>
