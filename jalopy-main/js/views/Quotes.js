@@ -25,6 +25,7 @@ export default function QuotesHTMLFunction(props) {
     <div id="QuotesPage">
     <h1>Quotes!</h1>
     ${makeQuoteCards(props.quotes)}
+    <a class="btn" data-link href="/insert-quote">Insert Quote</a>
 </div> `;
 }
 
