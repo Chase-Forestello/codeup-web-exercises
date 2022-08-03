@@ -1,4 +1,4 @@
-// Incomplete - JavaScript I - DOM Add & Remove
+// Complete - JavaScript I - DOM Add & Remove
 (function () {
     "use strict";
 
