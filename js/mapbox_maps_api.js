@@ -1,4 +1,4 @@
-// Incomplete - Javascript I - AJAX & JS Fetch APIs - Mapbox Exercise
+// Complete - Javascript I - AJAX & JS Fetch APIs - Mapbox Exercise
 (async function () {
     "use strict";
 
