@@ -1,4 +1,4 @@
-// Complete - JavaScript I - Arrays - Exercise
+//  Complete - JavaScript I - Arrays - Exercise
 (function () {
     "use strict";
 
